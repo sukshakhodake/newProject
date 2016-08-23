@@ -285,7 +285,7 @@ a {
 }
 .bird-show1 {
     position: absolute;
-    top: 44%;
+    top: 43%;
     right: 7%;
     img {
         width: 135px;
@@ -544,10 +544,63 @@ li {
     display: inline-block;
     padding: 0 40px;
     margin-top: 5px;
-    h4{
-      font-weight: 600;
-      font-size: 14px;
+    h4 {
+        font-weight: 600;
+        font-size: 14px;
     }
+}
+.mgl5 {
+    margin-left: 5px;
+}
+.contact-sec {
+    a {
+        color: #63463d;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
+.side-btn {
+    .fa {
+      background-color: #fff;
+  color: #e9c31e;
+  transform: rotate(90deg);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+    }
+}
+.rotate1 {
+  position: fixed;
+bottom: 56%;
+transform: rotate(270deg);
+right: -45px;
+background-color: #c6dbcf;
+border-radius: 30px;
+padding: 9px;
+width: 9%;
+}
+.rotate2 {
+    position: fixed;
+    bottom: 34%;
+    transform: rotate(270deg);
+    right: -45px;
+    background-color: #c6dbcf;
+    border-radius: 30px;
+    padding: 9px;
+    width: 9%;
+}
+.btn-bdr {
+  position: absolute;
+top: -3px;
+left: -16px;
+}
+.btn-default:focus, .btn-default.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+    outline: none;
 }
 ///header
 //bootstrap forms
