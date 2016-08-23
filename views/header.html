@@ -1,19 +1,40 @@
 <header>
-   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home"><img src="img/sec1/name1.png" alt="logo" width="20"> </a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="main-hd">
+            <div class="container text-center">
+                <div class="collapse navbar-collapse" id="nav-collapse">
+                    <!-- <div ng-include="template.menu" class="template menu"></div> -->
+                    <ul class="menu">
+                        <li><a ui-sref="home">Our Story</a></li>
+                        <li><a ui-sref="home">Our Team</a></li>
+                        <li><a ui-sref="home">Our Programmes</a></li>
+                        <li>
+                            <a ui-sref="home"><img src="img/sec1/name1.png" alt="" class="img-responsive"></a>
+                        </li>
+                        <li><a ui-sref="home">Enviornment</a></li>
+                        <li><a ui-sref="home">Gallery</a></li>
+                        <li><a ui-sref="home">Contact Us</a></li>
+                    </ul>
+                    <div class="social display-inline">
+                        <a href="#" target="_blank">
+                            <span><i class="fa fa-facebook" aria-hidden="true"></i>
+                            </span>
+                          </a>
+                        <a href="#" target="_blank">
+                          <span><i class="fa fa-twitter" aria-hidden="true"></i>
+                          </span>
+                        </a>
+                        <a href="#" target="_blank">
+                          <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="curve">
 
-        <div class="collapse navbar-collapse" id="nav-collapse">
-               <div ng-include="template.menu" class="template menu"></div>
         </div>
-    </div>
-</nav>
+    </nav>
+
 </header>

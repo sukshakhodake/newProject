@@ -1,20 +1,31 @@
 <div class="gallery">
-    <div class="fly">
-        <img src="img/sec5/butterfly.png" alt="" class="img-responsive">
-    </div>
-    <h3 class="text-uppercase">Gallery</h3>
+<div class="get-center">
+  <div class="fly display-inline">
+      <img src="img/sec5/butterfly.png" alt="" class="img-responsive">
+  </div>
+  <h3 class="text-uppercase font-dkcat display-inline">Gallery</h3>
+  <div class="container">
     <div class="slider">
-        <flex-slider flex-slide="item in gallery track by $index" animation="slide" animationloop="true" item-width="320px" item-margin="30px">
-            <li>
-                <div class="gallery-sec">
-                    <a href=""><img ng-src="{{item.image}}" alt="" class="img-responsive"></a>
-                    <div class="text-center">
-                        <div class="name-btn">
-                          <h4>{{item.name}}</h4>
+    <flex-slider class="text-center" flex-slide="item in gallery track by $index" animation="slide" animationloop="true" item-width="268px" control-nav="false" mousewheel="true" item-margin="10px">
+        <li>
+            <div class="gallery-sec">
+                <div class="img-sec">
+                    <div class="curve-holder" ng-style="{'background':'url('+item.image+')'}">
+                        <div class="plus">
+                            <span>+</span>
                         </div>
                     </div>
+                    <!-- <a href=""><img ng-src="{{item.image}}" alt="" class="img-responsive"></a> -->
                 </div>
-            </li>
-            </flexi-slider>
+                <div class="text-center">
+                    <div class="name-btn">
+                        <h4>{{item.name}}</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        </flexi-slider>
     </div>
+  </div>
+</div>
 </div>
