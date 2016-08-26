@@ -32,8 +32,8 @@ body {
     font-family: "Rubik-Light";
     src: url("../fonts/Rubik-Light.ttf");
 }
-.font-rubik-light{
-  font-family: "Rubik-Light";
+.font-rubik-light {
+    font-family: "Rubik-Light";
 }
 .font-hind-regular {
     font-family: "Hind-Regular";
@@ -116,12 +116,13 @@ a {
     background-repeat: no-repeat;
     background-position: center center;
 }
-.fp-viewing-0 {
-    .navbar-fixed-top {
-        top: 100%;
-        border-width: 0;
-    }
-}
+//hide  header from first page
+// .fp-viewing-0 {
+//     .navbar-fixed-top {
+//         top: 100%;
+//         border-width: 0;
+//     }
+// }
 .one {
     background-image: url('../img/sec1/home.png');
 }
@@ -169,8 +170,8 @@ a {
     color: #fff;
     font-size: 27px;
     position: absolute;
-    left: 10%;
-    top: 49%;
+    left: 23%;
+    top: 38%;
     p {
         margin: 0;
     }
@@ -288,51 +289,53 @@ a {
 }
 .bird-show1 {
     position: absolute;
-    top: 43%;
-    right: 7%;
+    top: 38%;
+    right: 28%;
     img {
         width: 135px;
     }
 }
 .bird-show2 {
     position: absolute;
-    right: 37%;
-    top: 79%;
+    left: -60px;
+    bottom: -10px;
     img {
         width: 110px;
     }
 }
-.enviornment-sec {
-    background-color: #f4efcf;
-    border-radius: 105px;
-    width: 43%;
-    position: absolute;
-    left: 18%;
-    top: 32%;
-    padding: 40px 54px;
-    h3 {
-        color: #6a4657;
-        font-size: 50px;
-        margin: 0 16px;
-    }
-    p {
-        font-size: 16px;
-        margin-left: 10px;
-        line-height: 22px;
-        margin: 10px 16px 0;
-        color: #63463d;
-        font-weight: 600;
-    }
-    .know-more {
-        position: absolute;
-        right: 10%;
-        padding: 5px 20px;
-        /* padding: 12px; */
-        bottom: -11px;
-        font-size: 20px;
-        background-color: #e9c31e;
-        border-radius: 50px;
-        color: #40180c;
+.environment {
+    .enviornment-sec {
+        background-color: #f4efcf;
+        border-radius: 105px;
+        width: 100%;
+        position: relative;
+        left: 15%;
+        top: 125px;
+        padding: 40px 54px;
+        h3 {
+            color: #6a4657;
+            font-size: 50px;
+            margin: 0 16px;
+        }
+        p {
+            font-size: 16px;
+            margin-left: 10px;
+            line-height: 22px;
+            margin: 10px 16px 0;
+            color: #63463d;
+            font-weight: 600;
+        }
+        .know-more {
+            position: absolute;
+            right: 10%;
+            padding: 5px 20px;
+            /* padding: 12px; */
+            bottom: -11px;
+            font-size: 20px;
+            background-color: #e9c31e;
+            border-radius: 50px;
+            color: #40180c;
+        }
     }
 }
 .gallery {
@@ -354,28 +357,29 @@ a {
     }
 }
 .bird-tel {
-    position: absolute;
-    top: 31%;
-    left: 14%;
+    position: relative;
+    top: 29px;
+    left: 99px;
+    z-index: 9;
     img {
         width: 510px;
     }
 }
 .brd-msg {
-    position: absolute;
-    top: 25%;
-    left: 6%;
     img {
-        width: 150px;
+        width: 140px;
     }
+    position: absolute;
+    top: -17px;
+    left: -29px;
 }
 .contact-sec {
     background-color: #f4efcf;
     border-radius: 116px;
-    width: 34%;
-    position: absolute;
-    top: 39%;
-    left: 47%;
+    width: 83%;
+    position: relative;
+    left: -31px;
+    top: 70px;
     padding: 41px 52px;
 }
 h3 {
@@ -565,47 +569,113 @@ li {
     }
 }
 .side-btn {
+    position: relative;
+    button {
+        right: -54px;
+        padding: 5px 5px 5px 10px;
+    }
     .fa {
-      background-color: #fff;
-  color: #e9c31e;
-  transform: rotate(90deg);
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 20px;
+        background-color: #fff;
+        color: #e9c31e;
+        transform: rotate(90deg);
+        line-height: 35px;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
     }
 }
 .rotate1 {
-  position: fixed;
-bottom: 56%;
-transform: rotate(270deg);
-right: -45px;
-background-color: #c6dbcf;
-border-radius: 30px;
-padding: 9px;
-width: 9%;
+    position: fixed;
+    bottom: 56%;
+    transform: rotate(270deg);
+    background-color: #c6dbcf;
+    border-radius: 30px;
+    width: 9%;
 }
 .rotate2 {
     position: fixed;
     bottom: 34%;
     transform: rotate(270deg);
-    right: -45px;
     background-color: #c6dbcf;
     border-radius: 30px;
-    padding: 9px;
     width: 9%;
 }
 .btn-bdr {
-  position: absolute;
-top: -3px;
-left: -16px;
+    position: absolute;
+    top: -2px;
+    left: -12px;
 }
-.btn-default:focus, .btn-default.focus {
+.btn-default.focus,
+.btn-default:focus {
     color: #333;
     background-color: #e6e6e6;
     border-color: #8c8c8c;
     outline: none;
 }
-///header
+.environment-page {
+    position: relative;
+    .enviornment-sec {
+        background-color: #f4efcf;
+        border-radius: 105px;
+        padding: 40px 54px;
+        h3 {
+            color: #ef4f22;
+            font-size: 40px;
+            margin: 0 16px;
+            padding-bottom: 30px;
+        }
+        .sec-head {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 16px;
+            margin-left: 10px;
+            line-height: 22px;
+            margin: 0 0 10px;
+            color: #63463d;
+            font-weight: 600;
+        }
+    }
+}
+///headerc
+.environment-page {
+    background-image: url('../img/sec4/home4.png');
+}
+.swimbird {
+    margin-top: -12%;
+}
+.features {
+    margin-top: 20px;
+    li {
+        margin: 0;
+        font-size: 16px;
+    }
+}
+.desc-list {
+    li {
+        font-size: 16px;
+        margin: 0;
+    }
+    li::before {
+        content: "-";
+    }
+}
+.pdt180 {
+    padding-top: 180px;
+}
+.pdb150 {
+    padding-bottom: 150px !important;
+}
+.bird6 {
+    position: relative;
+}
+.pdt150 {
+    padding-top: 150px;
+}
+.pdt110{
+  padding-top: 110px;
+}
 //bootstrap forms
 /* Start writing sass here */
 @import "fancybox-override";
