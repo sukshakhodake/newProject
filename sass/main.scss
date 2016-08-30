@@ -929,11 +929,11 @@ li {
     margin: auto;
     position: relative;
     width: 80%;
-    label{
-      font-family:  "DK-The-Cats-Whiskers";
-      color: #fff;
-      font-weight: 500;
-      letter-spacing: 2px
+    label {
+        font-family: "DK-The-Cats-Whiskers";
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 2px;
     }
 }
 .tabordion input[name="sections"] {
@@ -971,15 +971,56 @@ li {
     display: block;
 }
 ///taboirdion end
-.ourprogrammes-page{
-  background-image: url('../img/sec4/home4.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+.option-sec {
+    .btn-default {
+        display: block;
+        width: 65%;
+        color: #fff;
+        background-color: #c54241;
+        padding: 5px 15px;
+        border: none;
+        margin: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        text-align: left;
+    }
 }
-.sec-holder{
-  border-radius: 50px;
-  background-color: #fff;
+.option-desc {
+    background-color: #f4efcf;
+    border-radius: 80px;
+    padding: 40px 120px;
+}
+//accordnew
+.ourprogrammes-page {
+    background-image: url('../img/sec4/home4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.sec-holder {
+    border-radius: 50px;
+    background-color: #fff;
+}
+.mother-toddler {
+    h2 {
+        color: #dd701f;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.4;
+        color: #63463d;
+        padding-bottom: 40px;
+        font-weight: 600;
+    }
+}
+.pdt30 {
+    padding-top: 65px;
+}
+.mgl-135 {
+    margin-left: -135px;
 }
 //bootstrap forms
 /* Start writing sass here */
