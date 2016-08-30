@@ -22,6 +22,21 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       url: "/environment",
       templateUrl: "views/template.html",
       controller: 'EnvironmentCtrl'
+  })
+  .state('ourstory', {
+      url: "/ourstory",
+      templateUrl: "views/template.html",
+      controller: 'OurStoryCtrl'
+  })
+  .state('ourteam', {
+      url: "/ourteam",
+      templateUrl: "views/template.html",
+      controller: 'OurTeamCtrl'
+  })
+  .state('ourprogrammes', {
+      url: "/ourprogrammes",
+      templateUrl: "views/template.html",
+      controller: 'OurProgrammesCtrl'
   });
   $urlRouterProvider.otherwise("/");
   $locationProvider.html5Mode(isproduction);

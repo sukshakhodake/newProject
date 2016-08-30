@@ -21,6 +21,10 @@ body {
     src: url("../fonts/Hind-Regular.ttf");
 }
 @font-face {
+    font-family: "inaimathi";
+    src: url("../fonts/inaimathi.ttf");
+}
+@font-face {
     font-family: "Hind-Medium";
     src: url("../fonts/Hind-Medium.ttf");
 }
@@ -40,6 +44,9 @@ body {
 }
 .font-hind-medium {
     font-family: "Hind-Medium";
+}
+.font-inaimathi {
+    font-family: "inaimathi";
 }
 .font-dkcat {
     font-family: "DK-The-Cats-Whiskers";
@@ -673,8 +680,306 @@ li {
 .pdt150 {
     padding-top: 150px;
 }
-.pdt110{
-  padding-top: 110px;
+.pdt110 {
+    padding-top: 110px;
+}
+//our-story
+.ourstory-page {
+    background-image: url('../img/ourstory/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our-story-content {
+    background-color: #fffdf9;
+    padding: 40px 60px 120px;
+    border-radius: 86px;
+    margin-bottom: -80px;
+    position: relative;
+    .main-head {
+        color: #ef4f22;
+        font-size: 40px;
+        margin: 0 16px;
+        padding-bottom: 30px;
+    }
+    .sub-head {
+        color: #ef4f22;
+        font-size: 40px;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    p {
+        font-size: 16px;
+        margin-left: 10px;
+        line-height: 22px;
+        margin: 0 0 10px;
+        color: #63463d;
+        font-weight: 600;
+    }
+    li {
+        list-style-type: disc;
+    }
+    .know-more {
+        padding: 2px;
+        width: 20%;
+        font-size: 20px;
+        background-color: #c54241;
+        border-radius: 50px;
+        position: relative;
+        color: #fff;
+        top: 105px;
+        margin-left: 20px;
+        border: transparent;
+    }
+}
+.lake {
+    position: relative;
+    left: -345px;
+    img {
+        height: 138px;
+    }
+}
+.fly-sec1 {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    img {
+        width: 50px;
+    }
+}
+.fly-sec2 {
+    position: absolute;
+    top: 240px;
+    right: 70px;
+    img {
+        width: 70px;
+    }
+}
+.fly-sec3 {
+    position: absolute;
+    left: 70px;
+    bottom: -50px;
+    img {
+        width: 50px;
+    }
+}
+.book-bird {
+    position: absolute;
+    bottom: -24px;
+    right: -56px;
+    img {
+        width: 150px;
+    }
+}
+///ourteam
+.ourteam-page {
+    background-image: url('../img/ourteam/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+        font-size: 16px;
+        margin-left: 10px;
+        line-height: 22px;
+        margin: 0;
+        color: #63463d;
+        font-weight: 600;
+    }
+    .main-head {
+        color: #fffdf9;
+        font-size: 40px;
+        margin: 0 16px;
+        padding-bottom: 30px;
+    }
+}
+.our-team-content1 {
+    background-color: #fffdf9;
+    padding: 50px;
+    border-radius: 86px;
+    position: relative;
+    .sub-head {
+        color: #e45854;
+        font-size: 42px;
+        margin: 0;
+    }
+    .post {
+        font-size: 20px;
+        color: #e45854;
+    }
+}
+.bird1-team {
+    position: absolute;
+    top: 183px;
+    right: 0;
+    img {
+        width: 650px;
+    }
+}
+.mgt150 {
+    margin-top: 150px;
+}
+.our-team-content2 {
+    background-color: #fffdf9;
+    padding: 50px;
+    border-radius: 86px;
+    position: relative;
+    .sub-head {
+        color: #2ea480;
+        font-size: 42px;
+        margin: 0;
+    }
+    .post {
+        font-size: 20px;
+        color: #2ea480;
+    }
+}
+.bird2-team {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    img {
+        width: 340px;
+    }
+}
+.our-team-content3 {
+    background-color: #fffdf9;
+    padding: 50px 57px;
+    border-radius: 100px;
+    position: relative;
+    .sub-head {
+        color: #ee852f;
+        font-size: 42px;
+        margin: 0;
+    }
+    .post {
+        font-size: 20px;
+        color: #ee852f;
+    }
+}
+.bird3-team {
+    position: absolute;
+    top: 341px;
+    right: 60px;
+    img {
+        width: 200px;
+    }
+}
+.our-team-content4 {
+    background-color: #fffdf9;
+    padding: 50px 57px;
+    border-radius: 100px;
+    position: relative;
+    .sub-head {
+        color: #511b09;
+        font-size: 42px;
+        margin: 0;
+    }
+    .post {
+        font-size: 20px;
+        color: #511b09;
+    }
+}
+.bird4-team {
+    position: absolute;
+    top: 340px;
+    left: 0;
+    img {
+        width: 600px;
+    }
+}
+.our-team-content5 {
+    background-color: #fffdf9;
+    padding: 50px 57px;
+    border-radius: 130px;
+    position: relative;
+    span {
+        font-family: "Hind-Regular";
+        font-size: 35px;
+    }
+    .sub-head {
+        color: #dd701f;
+        font-size: 42px;
+        margin: 0;
+    }
+    .post {
+        font-size: 20px;
+        color: #dd701f;
+    }
+}
+.bird5-team {
+    position: absolute;
+    top: 415px;
+    right: 0;
+    img {
+        width: 700px;
+    }
+}
+.sec-align {
+    position: relative;
+}
+.sec-align1 {
+    position: relative;
+    padding-bottom: 215px;
+}
+///programmes
+///accordian
+.tabordion {
+    color: #333;
+    display: block;
+    font-family: arial, sans-serif;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    label{
+      font-family:  "DK-The-Cats-Whiskers";
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 2px
+    }
+}
+.tabordion input[name="sections"] {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+.tabordion section {
+    display: block;
+}
+.tabordion section label {
+    background: #c54241;
+    cursor: pointer;
+    border-radius: 40px;
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 5px 20px;
+    position: relative;
+    width: 180px;
+    z-index: 100;
+}
+.tabordion section article {
+    display: none;
+    left: 230px;
+    min-width: 300px;
+    padding: 0 0 0 21px;
+    position: absolute;
+    top: 0;
+}
+.tabordion input[name="sections"]:checked + label {
+    background: #dd701f;
+}
+.tabordion input[name="sections"]:checked ~ article {
+    display: block;
+}
+///taboirdion end
+.ourprogrammes-page{
+  background-image: url('../img/sec4/home4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.sec-holder{
+  border-radius: 50px;
+  background-color: #fff;
 }
 //bootstrap forms
 /* Start writing sass here */
