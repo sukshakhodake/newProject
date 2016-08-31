@@ -921,56 +921,7 @@ li {
     padding-bottom: 215px;
 }
 ///programmes
-///accordian
-.tabordion {
-    color: #333;
-    display: block;
-    font-family: arial, sans-serif;
-    margin: auto;
-    position: relative;
-    width: 80%;
-    label {
-        font-family: "DK-The-Cats-Whiskers";
-        color: #fff;
-        font-weight: 500;
-        letter-spacing: 2px;
-    }
-}
-.tabordion input[name="sections"] {
-    left: -9999px;
-    position: absolute;
-    top: -9999px;
-}
-.tabordion section {
-    display: block;
-}
-.tabordion section label {
-    background: #c54241;
-    cursor: pointer;
-    border-radius: 40px;
-    display: block;
-    text-align: left;
-    font-size: 1.2em;
-    padding: 5px 20px;
-    position: relative;
-    width: 180px;
-    z-index: 100;
-}
-.tabordion section article {
-    display: none;
-    left: 230px;
-    min-width: 300px;
-    padding: 0 0 0 21px;
-    position: absolute;
-    top: 0;
-}
-.tabordion input[name="sections"]:checked + label {
-    background: #dd701f;
-}
-.tabordion input[name="sections"]:checked ~ article {
-    display: block;
-}
-///taboirdion end
+
 .option-sec {
     .btn-default {
         display: block;
@@ -983,12 +934,32 @@ li {
         border-radius: 20px;
         font-size: 20px;
         text-align: left;
+        &:active{
+          &:focus{
+            color: #fff;
+      background-color: #dd701f;
+      border-color: transparent;
+      outline: none;
+          }
+        }
+        &:focus{
+          color: #fff;
+    background-color: #dd701f;
+    border-color: transparent;
+    outline: none;
+        }
+    }
+    .active{
+      color: #fff;
+background-color: #dd701f;
+border-color: transparent;
     }
 }
 .option-desc {
     background-color: #f4efcf;
     border-radius: 80px;
     padding: 40px 120px;
+    height: 350px;
 }
 //accordnew
 .ourprogrammes-page {
@@ -1001,7 +972,7 @@ li {
     border-radius: 50px;
     background-color: #fff;
 }
-.mother-toddler {
+.sec-style {
     h2 {
         color: #dd701f;
         font-size: 40px;
@@ -1012,12 +983,11 @@ li {
         font-size: 15px;
         line-height: 1.4;
         color: #63463d;
-        padding-bottom: 40px;
         font-weight: 600;
     }
 }
-.pdt30 {
-    padding-top: 65px;
+.pdt80 {
+    padding-top: 80px;
 }
 .mgl-135 {
     margin-left: -135px;
