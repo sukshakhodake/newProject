@@ -114,6 +114,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
         $scope.tab = 1;
         })
+.controller('OurTeachersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("ourteachers");
+        $scope.menutitle = NavigationService.makeactive("Our Teachers");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        })
+.controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("artattack");
+        $scope.menutitle = NavigationService.makeactive("Art Attack");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        })
 
 .controller('headerctrl', function($scope, TemplateService) {
     $scope.template = TemplateService;

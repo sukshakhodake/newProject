@@ -47,6 +47,27 @@
             </section>
         </div> -->
 
+
+
+  <div class="prog-bir1" ng-if="tab == 1">
+    <img src="img/programmes/bird1.png" alt="" class="img-responsive">
+  </div>
+  <div class="prog-bir2" ng-if="tab == 2">
+    <img src="img/programmes/bird2.png" alt="" class="img-responsive">
+  </div>
+  <div class="prog-bir2-1" ng-if="tab == 2">
+    <img src="img/programmes/grass2.png" alt="" class="img-responsive">
+  </div>
+  <div class="prog-bir3" ng-if="tab == 3">
+    <img src="img/programmes/bird3.png" alt="" class="img-responsive">
+  </div>
+  <div class="prog-bir4" ng-if="tab == 4">
+    <img src="img/programmes/bird4.png" alt="" class="img-responsive">
+  </div>
+
+
+
+
         <div class="row">
             <div class="col-md-3">
                 <div class="option-sec font-dkcat pdt80">
@@ -56,8 +77,12 @@
                     <button type="button" class="btn btn-default" ng-click="tab = 4" ng-class="{'active':tab == 4}">Nursery</button>
                 </div>
             </div>
+
             <div class="col-md-9 mgl-135">
                 <div class="option-desc">
+                  <div class="prog-flower" ng-if="tab == 2">
+                    <img src="img/programmes/flower2.png" alt="" class="img-responsive">
+                  </div>
                     <div class="mother-toddler sec-style" ng-if="tab == 1">
                         <p class="font-hind-regular text-justify">
                             <!-- <span ng-if="tab == 1"> -->
@@ -66,10 +91,11 @@
                                 With research pointing to the fact that 80% of the brain development takes place by the age of 5 you cannot start early enough. Our Mommy and Me programme is designed keeping in mind the kind of exposure children require to develop their Motor Skills
                                 and their creativity, giving them an exposure with loads of activities along with their mommies to instil in them that learning is fun and learning happens through all their senses.
                             </p>
+                              <!-- <img src="img/programmes/bird1.png" alt="" class="img-responsive"> -->
                             <!-- </span> -->
                     </div>
                     <div class="pre-nursery sec-style" ng-if="tab == 2">
-                        <!-- <span ng-if="tab == 2"> -->
+                      <!-- <span ng-if="tab == 2"> -->
                         <h2 class="text-uppercase font-dkcat text-center">Pre-Nursery</h2>
                         <p>
                             Pre Nursery is the first exposure in the long educational journey of every child. It is here that the seeds of a happy schooling are sowed. Thus Pre Nursery is an all important year. At Weavers we will ensure this journey has the right beginning and is
@@ -84,6 +110,7 @@
                         <p>
                             A place where children find the comfort of their home and the cosiness of their room! There are enough activities to keep children busy when they need to be and rested when they require rest.
                         </p>
+
                         <!-- </span> -->
                     </div>
                     <div class="nursery sec-style" ng-if="tab == 4">
@@ -95,6 +122,7 @@
                             around them. As they learn and sing new songs and rhymes during music and movement they also explore musical instruments that create different sounds. Pre-reading and pre-writing activities become complex and pre-mathematics
                             is added.
                         </p>
+                        <!-- <img src="img/programmes/bird4.png" alt="" class="img-responsive"> -->
                         <!-- </span> -->
                     </div>
                     </p>
