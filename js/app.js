@@ -38,6 +38,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       templateUrl: "views/template.html",
       controller: 'OurTeachersCtrl'
   })
+  .state('gallery', {
+      url: "/gallery",
+      templateUrl: "views/template.html",
+      controller: 'GalleryCtrl'
+  })
   .state('artattack', {
       url: "/artattack",
       templateUrl: "views/template.html",
