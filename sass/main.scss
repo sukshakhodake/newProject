@@ -22,6 +22,10 @@ body {
     src: url("../fonts/Hind-Regular.ttf");
 }
 @font-face {
+    font-family: "GothamRoundedBook";
+    src: url("../fonts/GothamRoundedBook.ttf");
+}
+@font-face {
     font-family: "inaimathi";
     src: url("../fonts/inaimathi.ttf");
 }
@@ -44,6 +48,10 @@ body {
 
 .font-hind-regular {
     font-family: "Hind-Regular";
+}
+
+.font-gothamrounded {
+    font-family: "GothamRoundedBook";
 }
 
 .font-hind-medium {
@@ -201,7 +209,8 @@ a {
     position: absolute;
     top: 6%;
     left: -84px;
-  img {
+padding-top: 50px;
+    img {
         width: 880px;
     }
 }
@@ -213,7 +222,7 @@ a {
     position: absolute;
     left: 23%;
     top: 38%;
-
+padding-top: 20px;
     p {
         margin: 0;
     }
@@ -289,11 +298,6 @@ a {
 }
 
 .parts {
-    img {
-        width: 140px;
-        padding-bottom: 10px;
-    }
-
     span {
         font-family: "DK-The-Cats-Whiskers";
         font-weight: 600;
@@ -303,16 +307,78 @@ a {
         @include transition(all ease 300ms);
     }
 
-    .parts-sec {
+    .mt_holder {
+        position: relative;
         display: inline-block;
-        text-align: center;
+        width: 137px;
+    }
+
+    .parts-sec {
         cursor: pointer;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 135px;
 
         &:hover {
             span {
                 color: darken(#fff, 20%);
             }
         }
+    }
+
+    .parts-sec2 {
+        cursor: pointer;
+        position: absolute;
+        top: -5px;
+        left: 17px;
+        width: 135px;
+
+        &:hover {
+            span {
+                color: darken(#fff, 20%);
+            }
+        }
+    }
+
+    .parts-sec3 {
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        left: -15px;
+        width: 135px;
+
+        &:hover {
+            span {
+                color: darken(#fff, 20%);
+            }
+        }
+    }
+
+    .parts-sec4 {
+        cursor: pointer;
+        position: absolute;
+        top: 42px;
+        right: 0;
+        width: 135px;
+
+        &:hover {
+            span {
+                color: darken(#fff, 20%);
+            }
+        }
+    }
+
+    .img1-sec3 {
+        height: 135px;
+    }
+
+    .img2-sec3 {
+        height: 140px;
+    }
+
+    .img2-sec4 {
+        height: 80px;
     }
 
     .mgt50 {
@@ -329,21 +395,21 @@ a {
 
 .camera-sec {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: -9px;
 
     img {
-        width: 220px;
+        width: 180px;
     }
 }
 
 .main-slide {
-    position: absolute;
+  position: absolute;
     right: -88px;
-    top: 12%;
+    top: -27px;
 
     img {
-        width: 640px;
+        width: 652px;
     }
 }
 
@@ -359,7 +425,7 @@ a {
 
 .bird-show2 {
     position: absolute;
-    left: -60px;
+    left: -44px;
     bottom: -10px;
 
     img {
@@ -520,6 +586,7 @@ li {
     padding: 14px 11px;
 
     span {
+      cursor: pointer;
         color: #ee5022;
         font-size: 42px;
         font-weight: 400;
@@ -544,12 +611,12 @@ li {
     .flex-direction-nav .flex-prev {
         opacity: 1;
         height: 20%;
-        left: -60px;
+        left: -40px;
     }
 
     .flexslider:hover .flex-direction-nav .flex-prev {
         opacity: 1;
-        left: -60px;
+          left: -40px;
     }
 
     .flexslider:hover .flex-direction-nav .flex-next {
@@ -683,8 +750,9 @@ li {
     position: absolute;
     top: 40%;
     right: 0;
-    img{
-      width: 40px;
+
+    img {
+        width: 40px;
     }
 }
 
@@ -834,10 +902,10 @@ li {
 
 .lake {
     position: relative;
-    left: -345px;
+    left: 0;
 
     img {
-        height: 138px;
+        height: 125px;
     }
 }
 
@@ -924,11 +992,11 @@ li {
 
 .bird1-team {
     position: absolute;
-    top: 254px;
+    top: 250px;
     right: 0;
 
     img {
-        width: 650px;
+        width: 690px;
     }
 }
 
@@ -938,19 +1006,19 @@ li {
 
 .our-team-content2 {
     background-color: #fffdf9;
-    padding: 50px;
-    border-radius: 86px;
+    padding: 70px;
+    border-radius: 90px;
     position: relative;
 
     .sub-head {
-        color: #2ea480;
+        color: #e9c31e;
         font-size: 42px;
         margin: 0;
     }
 
     .post {
         font-size: 20px;
-        color: #2ea480;
+        color: #61230d;
     }
 }
 
@@ -960,60 +1028,24 @@ li {
     left: 0;
 
     img {
-        width: 340px;
-    }
-}
-
-.our-team-content3 {
-    background-color: #fffdf9;
-    padding: 50px 57px;
-    border-radius: 100px;
-    position: relative;
-
-    .sub-head {
-        color: #ee852f;
-        font-size: 42px;
-        margin: 0;
-    }
-
-    .post {
-        font-size: 20px;
-        color: #ee852f;
+        width: 240px;
     }
 }
 
 .bird3-team {
     position: absolute;
-    top: 341px;
-    right: 60px;
+    bottom: -50px;
+    right: -76px;
 
     img {
         width: 200px;
     }
 }
 
-.our-team-content4 {
-    background-color: #fffdf9;
-    padding: 50px 57px;
-    border-radius: 100px;
-    position: relative;
-
-    .sub-head {
-        color: #511b09;
-        font-size: 42px;
-        margin: 0;
-    }
-
-    .post {
-        font-size: 20px;
-        color: #511b09;
-    }
-}
-
 .bird4-team {
     position: absolute;
-    top: 340px;
-    left: 0;
+    top: 400px;
+    right: 0;
 
     img {
         width: 600px;
@@ -1022,8 +1054,8 @@ li {
 
 .our-team-content5 {
     background-color: #fffdf9;
-    padding: 50px 57px;
-    border-radius: 130px;
+    padding: 55px 70px;
+    border-radius: 90px;
     position: relative;
 
     span {
@@ -1032,21 +1064,20 @@ li {
     }
 
     .sub-head {
-        color: #dd701f;
+        color: #2ea480;
         font-size: 42px;
         margin: 0;
     }
 
     .post {
         font-size: 20px;
-        color: #dd701f;
+        color: #2ea480;
     }
 }
 
 .bird5-team {
-    position: absolute;
-    top: 415px;
-    right: 0;
+    margin-top: -50px;
+    padding-bottom: 20px;
 
     img {
         width: 700px;
@@ -1062,22 +1093,25 @@ li {
     padding-bottom: 215px;
 }
 ///programmes
-
+.btn-default1.active:hover{
+  background-color: none!important;
+}
 .option-sec {
-    .btn-default {
+  position: relative;
+  z-index: 999;
+    .btn-default1 {
         display: block;
-        width: 65%;
+        width: 148px;
         color: #fff;
         background-color: #c54241;
         padding: 5px 15px;
         border: none;
         margin: 10px;
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;
         font-size: 20px;
         text-align: left;
-
-        &:active {
-            &:focus {
+    &:active {
+          &:focus {
                 color: #fff;
                 background-color: #dd701f;
                 border-color: transparent;
@@ -1105,11 +1139,44 @@ li {
     border-radius: 80px;
     padding: 40px 120px;
     height: 350px;
+    position: relative;
+    z-index: 99;
+}
+
+.prog-flower {
+    position: absolute;
+    left: -15px;
+    top: -43px;
+
+    img {
+        width: 150px;
+    }
 }
 //accordnew
 
-.ourprogrammes-page {
-    background-image: url('../img/sec4/home4.png');
+.ourprogrammes-page1 {
+    background-image: url('../img/programmes/mother.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.ourprogrammes-page2 {
+    background-image: url('../img/programmes/pre-nursery.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.ourprogrammes-page3 {
+    background-image: url('../img/programmes/nursery.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.ourprogrammes-page4 {
+    background-image: url('../img/programmes/daycare.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -1148,7 +1215,7 @@ li {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
 
     img {
         width: 700px;
@@ -1159,7 +1226,7 @@ li {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
 
     img {
         width: 800px;
@@ -1175,15 +1242,31 @@ li {
         width: 175px;
     }
 }
+.prog-bir2-2 {
+  position: absolute;
+    left: 15%;
+    bottom: 10%;
+    img {
+        width: 70px;
+    }
+}
+.prog-bir1-2 {
+  position: absolute;
+  top: 13%;
+  left: 12%;
+    img {
+        width: 110px;
+    }
+}
 
 .prog-bir3 {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999;
 
     img {
-        width: 600px;
+        width: 570px;
     }
 }
 
@@ -1191,13 +1274,14 @@ li {
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: 99;
+    z-index: 999;
 
     img {
         width: 620px;
     }
 }
 //teachers
+
 .ourteachers-page {
     background-image: url('../img/teacher/background.png');
     background-size: cover;
@@ -1239,30 +1323,31 @@ li {
         font-size: 16px;
     }
 }
-
-
 ///art attack
-.artattack-page{
-  background-image: url('../img/art/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  .sub-head {
-      color: #fffdf9;
-      font-size: 42px;
-      margin: 0;
-      padding-bottom: 15px;
-          margin-left: 50px;
-  }
 
+.artattack-page {
+    background-image: url('../img/art/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .sub-head {
+        color: #fffdf9;
+        font-size: 42px;
+        margin: 0;
+        padding-bottom: 15px;
+        margin-left: 50px;
+    }
 }
-.bird1-art{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  img{
-    width: 800px;
-  }
+
+.bird1-art {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img {
+        width: 800px;
+    }
 }
 // .artattack{
 //   background-color: #fffdf9;
@@ -1270,97 +1355,110 @@ li {
 //   position: relative;
 // }
 
-.img1{
-  height: 160px;
-  width: auto;
-  overflow: hidden;
-  display: block;
-  position: relative;
+.img1 {
+    height: 160px;
+    width: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    // margin: 0 5px;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
 
-  // margin: 0 5px;
-  img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  }
+.wd1 {
+    width: 129px;
 }
-.wd1{
-  width: 129px;
 
+.wd2 {
+    width: 279px;
 }
-.wd2{
-  width: 279px;
 
+.wd3 {
+    width: 279px;
 }
-.wd3{
-  width: 279px;
-}
-.wd4{
-  width: 429px;
-}
-.wd5{
-  width: 438px;
 
+.wd4 {
+    width: 429px;
 }
-.wd6{
-  width: 142px;
 
+.wd5 {
+    width: 438px;
 }
-.wd7{
-  width: 396px;
+
+.wd6 {
+    width: 142px;
 }
-.wd8{
-  width: 141px;
+
+.wd7 {
+    width: 396px;
 }
-.pdl24{
-  padding-left: 24px;
+
+.wd8 {
+    width: 141px;
 }
-.pic-holder{
-  background-color: #fff;
+
+.pdl24 {
+    padding-left: 24px;
 }
-.artattack{
-//   padding: 5px;
-// line-height: 1.0;
-margin-top: 5px;
+
+.pic-holder {
+    background-color: #fff;
+}
+
+.artattack {
+    //   padding: 5px;
+    // line-height: 1.0;
+    margin-top: 5px;
 }
 // .artattack1{
 //   padding-bottom: 4px;
 // line-height: 1.0;
 // }
-.butterfly-art{
-  position: absolute;
-  top: -80px;
-  z-index: 9;
-  left: -70px;
-  img{
-    width: 105px;
-  }
-}
-.fly-art{
-  position: absolute;
-    top: -130px;
-    right: -8%;
-  img{
-    width: 75px;
-  }
-}
-//remove this to set in local
-.mgr5{
-  margin-right: 5px;
+
+.butterfly-art {
+    position: absolute;
+    top: -80px;
+    z-index: 9;
+    left: -70px;
+
+    img {
+        width: 105px;
+    }
 }
 
-.pic-holder{
-  position: relative;
+.fly-art {
+    position: absolute;
+    top: -130px;
+    right: 0;
+
+    img {
+        width: 75px;
+    }
 }
-.flower-art{
-  position: absolute;
-  top: -109px;
-right: 54px;
-z-index: -1;
-img{
-  width: 244px;
+//remove this to set in local
+
+.mgr5 {
+    margin-right: 5px;
 }
+
+.pic-holder {
+    position: relative;
+}
+
+.flower-art {
+    position: absolute;
+    top: -109px;
+    right: 54px;
+    z-index: -1;
+
+    img {
+        width: 244px;
+    }
 }
 //bootstrap forms
 /* Start writing sass here */
