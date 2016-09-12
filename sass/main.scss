@@ -1174,14 +1174,14 @@ li {
     height: 100vh;
 }
 
-.ourprogrammes-page3 {
+.ourprogrammes-page4 {
     background-image: url('../img/programmes/nursery.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-.ourprogrammes-page4 {
+.ourprogrammes-page3 {
     background-image: url('../img/programmes/daycare.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1239,16 +1239,6 @@ li {
     }
 }
 
-.prog-bir2-1 {
-    position: absolute;
-    left: -10px;
-    bottom: 25px;
-
-    img {
-        width: 175px;
-    }
-}
-
 .prog-bir2-2 {
     position: absolute;
     left: 15%;
@@ -1272,7 +1262,7 @@ li {
 .prog-bir3 {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 999;
 
     img {
@@ -1471,17 +1461,20 @@ li {
     }
 }
 //gallerycomingsoon
+
 .gallery-page {
     background-image: url('../img/gallery/gallerybackground.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
+
     p {
         color: #fffdf9;
         font-weight: 500;
         font-size: 20px;
         margin: 0;
     }
+
     .sub-head {
         color: #fffdf9;
         font-size: 42px;
@@ -1499,9 +1492,11 @@ li {
         }
     }
 }
-.coming-sec{
-padding-top: 20px;
+
+.coming-sec {
+    padding-top: 20px;
 }
+
 .pdt100 {
     padding-top: 100px;
 }
@@ -1510,6 +1505,84 @@ padding-top: 20px;
     img {
         width: 400px;
         margin: 0 auto;
+    }
+}
+///contact us
+.pdt80 {
+    padding-top: 80px;
+}
+
+.contact-sec1 {
+    background-color: #fefcec;
+    border-radius: 116px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    padding: 41px 52px;
+    color: #63463d;
+
+    a {
+        text-decoration: none;
+        color: #63463d;
+    }
+}
+
+.contact-background {
+    background-image: url("../img/contact/background-contact.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    h3 {
+        color: #fefcec;
+        font-size: 50px;
+        margin: 0;
+        padding-bottom: 15px;
+        margin-left: 50px;
+    }
+
+    .msg-form {
+        padding-top: 100px;
+    }
+}
+
+.fdb-form {
+    background-color: #fefcec;
+    padding: 40px 80px;
+    border-radius: 100px;
+position: relative;
+margin-top: 30px;
+    input {
+        border: 0;
+        border-bottom: 1px solid #2c2d3d;
+        background-color: transparent;
+    }
+
+    textarea {
+        background-color: #f6f4e2;
+        border: 0;
+    }
+}
+.brdcontact{
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  img{
+    width: 300px;
+  }
+}
+
+.know-more {
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #e9c31e;
+    border-radius: 50px;
+    color: #40180c;
+    margin-bottom: -80px;
+
+    &:active,
+    &:focus {
+        outline: none;
     }
 }
 //bootstrap forms

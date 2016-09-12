@@ -104,6 +104,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
+        $scope.tab = 1;
     })
     .controller('OurTeamCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -135,6 +136,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("gallery");
         $scope.menutitle = NavigationService.makeactive("Gallery");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    })
+    .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("contactus");
+        $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
     })
