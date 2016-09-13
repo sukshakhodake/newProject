@@ -1,6 +1,6 @@
 <div class="environment-page pdt150">
-<div class="container">
-<div class="text-center">
+
+    <!-- <div class="text-center">
   <div class="enviornment-sec text-left pdb150">
       <h3 class="text-uppercase font-dkcat text-center">Environment</h3>
       <p class="text-justify font-hind-regular font-regular">
@@ -45,9 +45,70 @@
   Development and creative expression.</li>
   </ul>
   </div>
-</div>
-</div>
-<div class="swimbird">
-  <img src="img/environment/birdswim.png" alt="" class="img-responsive">
-</div>
+</div> -->
+    <div class="container">
+
+
+        <div class="tab-part pdb150">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-md-3"> -->
+            <div class="option-sec font-dkcat display-inline">
+                <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">Our Approach</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">Environment</button>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="col-md-9 mgl-135"> -->
+
+            <!-- <div class="text-center"> -->
+            <div class="option-desc2 text-justify display-inline">
+                <div class="mother-toddler sec-style" ng-if="tab == 1">
+                    <p class="font-hind-regular text-justify">
+                        <h2 class="text-uppercase font-dkcat text-center">Our Approach</h2>
+                        <p>
+                            We approach preschool education with all the seriousness and sanctity that it warrants without taking away the enjoyment of the learning process. Today’s children need experiential learning where every sense comes into play for optimal development. With
+                            our philosophy of ‘Every child’s every aspect is important’ the school focuses on the all-round development of each student.   While keeping in mind that each child is different, every child will be nurtured to excel academically
+                            as well as encouraged to develop their talents in art, music, sports and other extracurricular pursuits.
+                        </p>
+                        <p>Our program covers six areas of development:</p>
+                        <ul>
+                            <li>Personal, social and emotional development</li>
+                            <li>Language development</li>
+                            <li>Creative development</li>
+                            <li>Physical development</li>
+                            <li>Mathematical understanding</li>
+                            <li>Knowledge and understanding of the world.</li>
+                        </ul>
+                        <p>In today's knowledge-led society, The Weavers Preschool is committed to the passion of imparting education that empowers.</p>
+                </div>
+                <div class="pre-nursery sec-style lst-bullet" ng-if="tab == 2">
+                    <h2 class="text-uppercase font-dkcat text-center">Environment</h2>
+                  <ul>
+                    <li>Child-friendly classrooms – for safe movement.</li>
+                    <li>Safe and secure environment with CCTV cameras – to learn without fear.</li>
+                    <li>Caring and nurturing teachers – to joyfully guide the learning process.</li>
+                    <li>Large outdoor play area – for gross motor development, balance and coordination.</li>
+                    <li>Sand play and water play – for exploration, discovery and learning scientific concepts along with fine motor skills and tactile development.</li>
+                    <li>Plant nursery – for nurturing life and environmental awareness.</li>
+                    <li>Reading corner and role-play play areas – for creativity and imagination.</li>
+                    <li> Art area – for emotional and aesthetic development and creative expression.</li>
+                    <li>Music and movement – for finer brain development and understanding rhythm and  beat.</li>
+                  </ul>
+
+                </div>
+                </p>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+    <div class="bird-write" ng-if="tab == 1">
+        <img src="img/environment/birdwriteland.png" alt="" class="img-responsive">
+    </div>
+  <div class="flower" ng-if="tab == 1">
+        <img src="img/environment/flower1.png" alt="" class="img-responsive">
+    </div>
+    <div class="swimbird" ng-if="tab == 2">
+        <img src="img/environment/birdswim.png" alt="" class="img-responsive">
+    </div>
 </div>

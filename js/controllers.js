@@ -94,6 +94,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
+        $scope.tab = 1;
     })
     .controller('OurStoryCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
