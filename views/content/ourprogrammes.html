@@ -10,7 +10,7 @@
         <div class="prog-bir2" ng-if="tab == 2">
             <img src="img/programmes/bird2.png" alt="" class="img-responsive">
         </div>
-      
+
         <div class="prog-bir2-2" ng-if="tab == 2">
             <img src="img/programmes/fly.png" alt="" class="img-responsive">
         </div>
@@ -21,56 +21,58 @@
             <img src="img/programmes/bird4.png" alt="" class="img-responsive">
         </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="option-sec font-dkcat pdt80">
-                    <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">Mother Toddler</button>
-                    <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">Pre-Nursery</button>
-                    <button type="button" class="btn btn-default1" ng-click="tab = 3" ng-class="{'active':tab == 3}">Day Care</button>
-                    <button type="button" class="btn btn-default1" ng-click="tab = 4" ng-class="{'active':tab == 4}">Nursery</button>
-                </div>
+        <div class="tab-part">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-md-3"> -->
+            <div class="option-sec font-dkcat">
+                <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">Mother Toddler</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">Pre-Nursery</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 3" ng-class="{'active':tab == 3}">Day Care</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 4" ng-class="{'active':tab == 4}">Nursery</button>
             </div>
-            <div class="col-md-9 mgl-135">
-                <div class="prog-flower" ng-if="tab == 2">
-                    <img src="img/programmes/flower2.png" alt="" class="img-responsive">
+            <!-- </div> -->
+            <!-- <div class="col-md-9 mgl-135"> -->
+            <div class="prog-flower" ng-if="tab == 2">
+                <img src="img/programmes/flower2.png" alt="" class="img-responsive">
+            </div>
+            <div class="option-desc">
+                <div class="mother-toddler sec-style" ng-if="tab == 1">
+                    <p class="font-hind-regular text-justify">
+                        <h2 class="text-uppercase font-dkcat text-center">Mother Toddler</h2>
+                        <p>
+                            With research pointing to the fact that 80% of the brain development takes place by the age of 5 you cannot start early enough. Our Mommy and Me programme is designed keeping in mind the kind of exposure children require to develop their Motor Skills
+                            and their creativity, giving them an exposure with loads of activities along with their mommies to instil in them that learning is fun and learning happens through all their senses.
+                        </p>
                 </div>
-                <div class="option-desc">
-                    <div class="mother-toddler sec-style" ng-if="tab == 1">
-                        <p class="font-hind-regular text-justify">
-                            <h2 class="text-uppercase font-dkcat text-center">Mother Toddler</h2>
-                            <p>
-                                With research pointing to the fact that 80% of the brain development takes place by the age of 5 you cannot start early enough. Our Mommy and Me programme is designed keeping in mind the kind of exposure children require to develop their Motor Skills
-                                and their creativity, giving them an exposure with loads of activities along with their mommies to instil in them that learning is fun and learning happens through all their senses.
-                            </p>
-                    </div>
-                    <div class="pre-nursery sec-style" ng-if="tab == 2">
-                        <h2 class="text-uppercase font-dkcat text-center">Pre-Nursery</h2>
-                        <p>
-                            Pre Nursery is the first exposure in the long educational journey of every child. It is here that the seeds of a happy schooling are sowed. Thus Pre Nursery is an all important year. At Weavers we will ensure this journey has the right beginning and is
-                            steeped in engaging activities to develop a positive attitude towards learning. Children will learn about the world around them and the basic numbers and letters of the alphabet. Music and movement forms a large part of the
-                            pre nursery day Large fine and motor development also happens with the help of our large number of outdoor and indoor activities.
-                        </p>
 
-                    </div>
-                    <div class="daycare sec-style" ng-if="tab == 3">
-                        <h2 class="text-uppercase font-dkcat text-center">Day Care</h2>
-                        <p>
-                            A place where children find the comfort of their home and the cosiness of their room! There are enough activities to keep children busy when they need to be and rested when they require rest.
-                        </p>
-                    </div>
-                    <div class="nursery sec-style" ng-if="tab == 4">
+                <div class="pre-nursery sec-style" ng-if="tab == 2">
 
-                        <h2 class="text-uppercase font-dkcat text-center">Nursery</h2>
-                        <p>
-                            At this age children start becoming social and enjoy the company of their friends and interact more with each other. Social development is stepped up and children are engaged in small and large group activities. This helps create an environment for learning
-                            the nuances of social behaviour – manners, etiquettes and acceptable and unacceptable behaviour. They start exploring various mediums to express their creativity. Information is provided for a deeper understanding of things
-                            around them. As they learn and sing new songs and rhymes during music and movement they also explore musical instruments that create different sounds. Pre-reading and pre-writing activities become complex and pre-mathematics
-                            is added.
-                        </p>
-                    </div>
+                    <h2 class="text-uppercase font-dkcat text-center">Pre-Nursery</h2>
+                    <p>
+                        Pre Nursery is the first exposure in the long educational journey of every child. It is here that the seeds of a happy schooling are sowed. Thus Pre Nursery is an all important year. At Weavers we will ensure this journey has the right beginning and is
+                        steeped in engaging activities to develop a positive attitude towards learning. Children will learn about the world around them and the basic numbers and letters of the alphabet. Music and movement forms a large part of the pre
+                        nursery day Large fine and motor development also happens with the help of our large number of outdoor and indoor activities.
                     </p>
                 </div>
+                <div class="daycare sec-style" ng-if="tab == 3">
+                    <h2 class="text-uppercase font-dkcat text-center">Day Care</h2>
+                    <p>
+                        A place where children find the comfort of their home and the cosiness of their room! There are enough activities to keep children busy when they need to be and rested when they require rest.
+                    </p>
+                </div>
+                <div class="nursery sec-style" ng-if="tab == 4">
+
+                    <h2 class="text-uppercase font-dkcat text-center">Nursery</h2>
+                    <p>
+                        At this age children start becoming social and enjoy the company of their friends and interact more with each other. Social development is stepped up and children are engaged in small and large group activities. This helps create an environment for learning
+                        the nuances of social behaviour – manners, etiquettes and acceptable and unacceptable behaviour. They start exploring various mediums to express their creativity. Information is provided for a deeper understanding of things around
+                        them. As they learn and sing new songs and rhymes during music and movement they also explore musical instruments that create different sounds. Pre-reading and pre-writing activities become complex and pre-mathematics is added.
+                    </p>
+                </div>
+                </p>
             </div>
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
     </div>
 </div>
