@@ -822,6 +822,12 @@ li {
     li {
         list-style-type: disc;
     }
+
+    .sec-style {
+        h2 {
+            color: #ee5022;
+        }
+    }
 }
 
 .bird-write {
@@ -836,14 +842,48 @@ li {
 }
 ///headerc
 
+.a {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background: #182F5B;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.a:after,
+.a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 50%;
+}
+
+.a:after {
+    width: 100%;
+    height: 70px;
+    background-color: #182F5B;
+    left: 0;
+    top: 34px;
+}
+//head
+
 .environment-page {
     background-image: url('../img/environment/background.png');
 }
 
 .swimbird {
-  position: absolute;
-  z-index: 99;
-  bottom: 0;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+}
+
+.environ-desc {
+    li {
+        margin-bottom: 15px;
+    }
 }
 
 .features {
@@ -1685,6 +1725,19 @@ li {
 }
 
 .fdb-form {
+  .know-more {
+      padding: 5px 20px;
+      font-size: 20px;
+      background-color: #e9c31e;
+      border-radius: 50px;
+      color: #40180c;
+      margin-bottom: -80px;
+
+      &:active,
+      &:focus {
+          outline: none;
+      }
+  }
     background-color: #fefcec;
     padding: 40px 80px;
     border-radius: 100px;
@@ -1713,19 +1766,7 @@ li {
     }
 }
 
-.know-more {
-    padding: 5px 20px;
-    font-size: 20px;
-    background-color: #e9c31e;
-    border-radius: 50px;
-    color: #40180c;
-    margin-bottom: -80px;
 
-    &:active,
-    &:focus {
-        outline: none;
-    }
-}
 //bootstrap forms
 /* Start writing sass here */
 @import "fancybox-override";
