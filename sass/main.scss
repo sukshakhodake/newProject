@@ -847,10 +847,34 @@ li {
 }
 //our-story
 
-.ourstory-page {
+.ourstory-page1 {
     background-image: url('../img/ourstory/background.png');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.ourstory-page2 {
+    background-image: url('../img/ourstory/ourvision.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .prog-bir2{
+      img{
+        width: 400px;
+      }
+    }
+}
+.ourstory-page3 {
+    background-image: url('../img/ourstory/ourmission-bag.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .prog-bir3{
+      img{
+        width: 450px;
+      }
+    }
 }
 
 .our-story-content {
@@ -882,6 +906,7 @@ li {
         margin: 0 0 10px;
         color: #63463d;
         font-weight: 600;
+        text-align: justify;
     }
 
     li {
@@ -903,9 +928,9 @@ li {
 }
 
 .lake {
-    position: relative;
+    position: absolute;
     left: 0;
-
+bottom: 0;
     img {
         height: 125px;
     }
@@ -943,15 +968,32 @@ li {
 
 .book-bird {
     position: absolute;
-    bottom: -24px;
-    right: -115px;
+    bottom: -85px;
+    right: -90px;
+    z-index: 999;
 
     img {
         width: 200px;
     }
 }
-///ourteam
+//modified
+///ourstory-page
 
+.lst-bullet {
+    li {
+        list-style-type: disc;
+    }
+}
+
+.option-desc1 {
+    background-color: #f4efcf;
+    border-radius: 80px;
+    padding: 40px 120px;
+    height: 420px;
+    position: relative;
+    z-index: 99;
+}
+///ourteam
 .ourteam-page {
     background-image: url('../img/ourteam/background.png');
     background-size: cover;
@@ -1508,6 +1550,7 @@ li {
     }
 }
 ///contact us
+
 .pdt80 {
     padding-top: 80px;
 }
@@ -1550,8 +1593,9 @@ li {
     background-color: #fefcec;
     padding: 40px 80px;
     border-radius: 100px;
-position: relative;
-margin-top: 30px;
+    position: relative;
+    margin-top: 30px;
+
     input {
         border: 0;
         border-bottom: 1px solid #2c2d3d;
@@ -1563,13 +1607,15 @@ margin-top: 30px;
         border: 0;
     }
 }
-.brdcontact{
-  position: absolute;
-  top: -80px;
-  right: -120px;
-  img{
-    width: 300px;
-  }
+
+.brdcontact {
+    position: absolute;
+    top: -80px;
+    right: -120px;
+
+    img {
+        width: 300px;
+    }
 }
 
 .know-more {
