@@ -1,3 +1,4 @@
+var initMap = {};
 // JavaScript Document
 var firstapp = angular.module('firstapp', [
   'ui.router',

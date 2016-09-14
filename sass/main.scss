@@ -1766,7 +1766,13 @@ li {
     }
 }
 
-
+#map {
+  height: 100%;
+  img { opacity: 1; }
+}
+// #getmap {
+//   img { opacity: 1; }
+// }
 //bootstrap forms
 /* Start writing sass here */
 @import "fancybox-override";
