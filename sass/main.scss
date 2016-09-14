@@ -829,9 +829,14 @@ li {
         h2 {
             color: #ee5022;
         }
+        p{
+          color: #5c392d;
+        }
     }
 }
-
+.pdb70{
+  padding-bottom: 70px;
+}
 .bird-write {
     position: absolute;
     right: 0;
@@ -1772,9 +1777,44 @@ li {
   height: 100%;
   img { opacity: 1; }
 }
-// #getmap {
-//   img { opacity: 1; }
-// }
+
+
+.contact-form{
+  .fdb-form1 {
+    .know-more {
+        padding: 5px 20px;
+        font-size: 20px;
+        background-color: #e9c31e;
+        border-radius: 50px 0 0 50px;
+        color: #40180c;
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+      background-color: #fefcec;
+      padding: 40px 20px;
+      border-radius: 100px 0 0 100px;
+      position: relative;
+      margin-top: 30px;
+      width: 55%;
+      float: right;
+      input {
+          border: 0;
+          border-bottom: 1px solid #2c2d3d;
+          background-color: transparent;
+      }
+
+      textarea {
+          background-color: #f6f4e2;
+          border: 0;
+      }
+  }
+}
 //bootstrap forms
 /* Start writing sass here */
 @import "fancybox-override";

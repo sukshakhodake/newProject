@@ -96,10 +96,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
         $scope.tab = 1;
     })
-    .controller('OurStoryCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    .controller('AboutUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("ourstory");
-        $scope.menutitle = NavigationService.makeactive("Our Story");
+        $scope.template = TemplateService.changecontent("aboutus");
+        $scope.menutitle = NavigationService.makeactive("About Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         if (typeof $.fn.fullpage.destroy == 'function') {
@@ -146,78 +146,53 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        setTimeout(function(){
-          initMap = function() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 4,
-              center: {lat: -33, lng: 151},
-              disableDefaultUI: true,
-              scrollwheel:false
-            });
-          };
-        },100);
+        setTimeout(function() {
+            initMap = function() {
+              var myLatLng = {lat: 19.183042, lng: 72.949746};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: myLatLng,
+                    disableDefaultUI: true,
+                    scrollwheel: false
+                });
+             var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weavers Pre-school</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>WEAVERS</b>,</p>'+
+            '</div>'+
+            '</div>';
 
-    //     initMap = function() {
-    //   var tardeo = {
-    //     lat: 18.9692098,
-    //     lng: 72.81516999
-    //   };
-    //   // Create a new StyledMapType object, passing it an array of styles,
-    //   // and the name to be displayed on the map type control.
-    //   var styledMapType = new google.maps.StyledMapType(
-    //     [{
-    //       stylers: [{
-    //           hue: '#b3d2fe'
-    //         },
-    //         // { hue: '#000' },
-    //       ]
-    //     }], {
-    //       name: 'Styled Map'
-    //     });
-    //   var map = new google.maps.Map(document.getElementById('map'), {
-    //     zoom: 12,
-    //     center: tardeo,
-    //     disableDefaultUI: true
-    //   });
-    //
-    //   var contentString = '<div id="content">' +
-    //     '<div id="siteNotice">' +
-    //     '</div>' +
-    //     '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    //     '<div id="bodyContent">' +
-    //     '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    //     'sandstone rock formation in the southern part of the ' +
-    //     'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    //     'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    //     '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    //     'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    //     'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    //     'Aboriginal people of the area. It has many springs, waterholes, ' +
-    //     'rock caves and ancient paintings. Uluru is listed as a World ' +
-    //     'Heritage Site.</p>' +
-    //     '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    //     'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    //     '(last visited June 22, 2009).</p>' +
-    //     '</div>' +
-    //     '</div>';
-    //
-    //   var infowindow = new google.maps.InfoWindow({
-    //     content: contentString,
-    //     maxWidth: 200
-    //   });
-    //
-    //   var marker = new google.maps.Marker({
-    //     position: tardeo,
-    //     map: map,
-    //     title: 'Tardeo (Ayers Rock)'
-    //   });
-    //   marker.addListener('click', function() {
-    //     infowindow.open(map, marker);
-    //   });
-    //   map.mapTypes.set('styled_map', styledMapType);
-    //   map.setMapTypeId('styled_map');
-    // }
+            var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
 
+                function toggleBounce() {
+                    if (marker.getAnimation() !== null) {
+                      marker.setAnimation(null);
+                    } else {
+                      marker.setAnimation(google.maps.Animation.BOUNCE);
+                    }
+                  }
+                var image = '../img/contact/mapmarker.png';
+                var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                  icon: image,
+                  title: 'Uluru (Ayers Rock)',
+                    animation: google.maps.Animation.DROP
+                });
+                marker.addListener('click', function() {
+                  infowindow.open(map, marker);
+                });
+
+        // var marker = new google.maps.Marker({
+        //   position: myLatLng,
+        //   map: map,
+        // });
+            };
+        }, 100);
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
