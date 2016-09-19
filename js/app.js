@@ -19,10 +19,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     templateUrl: "views/template.html",
     controller: 'HomeCtrl'
   })
-  .state('environment', {
-      url: "/environment",
+  .state('ourapproach', {
+      url: "/ourapproach",
       templateUrl: "views/template.html",
-      controller: 'EnvironmentCtrl'
+      controller: 'OurApproachCtrl'
   })
   .state('aboutus', {
       url: "/aboutus",

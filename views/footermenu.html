@@ -1,33 +1,50 @@
-<div class="side-btn">
-  <img src="img/contact.png" alt="" class="img-responsive">
-  <div class="contact-form hide">
+<!-- <div class="side-btn">
+    <img src="img/contact.png" alt="" class="img-responsive">
+    <div class="contact-form">
+        <form class="fdb-form1 form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="note" placeholder="Note">
+            </div>
+            <div class="sub-btn text-center">
+                <button type="button" class="btn btn-default know-more font-dkcat">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br>
+
+</div> -->
+
+<div id="slideout" class="{{formClass}}" ng-click="formSlide();"  ng-controller="headerctrl">
+  <img src="img/contact.png" alt="Feedback" />
+  <div id="slideout_inner">
     <form class="fdb-form1 form-inline">
+      <i class="fa fa-times pull-right" aria-hidden="true"></i>
       <div class="form-group">
-            <input type="text" class="form-control" id="usr" placeholder="Name">
-        </div>
-        <div class="form-group">
+          <input type="text" class="form-control" id="usr" placeholder="Name">
+      </div>
+      <div class="form-group">
           <input type="text" class="form-control" id="mobile" placeholder="Mobile">
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" id="email" placeholder="Email Address">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="note" placeholder="Note">
-        </div>
-        <div class="sub-btn text-center">
-            <button type="button" class="btn btn-default know-more font-dkcat">Submit</button>
-        </div>
-      </form>
-
-        <!-- <div class="form-group">
-            <input type="text" class="form-control" id="mobile" placeholder="Mobile">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Note"></textarea>
-        </div> -->
-
-    </form>
+      </div>
+      <br>
+      <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Email Address">
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control" id="note" placeholder="Note">
+      </div>
+      <div class="sub-btn text-center">
+          <button type="button" class="btn btn-default know-more font-dkcat">Submit</button>
+      </div>
+  			</form>
   </div>
-  <br>
-  <img src="img/brochure.png" alt="" class="img-responsive">
-  </div>
+</div>
+  <!-- <img src="img/brochure.png" alt="" class="img-responsive"> -->

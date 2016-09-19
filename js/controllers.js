@@ -85,10 +85,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // ];
 })
 
-.controller('EnvironmentCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('OurApproachCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("environment");
-        $scope.menutitle = NavigationService.makeactive("Environment");
+        $scope.template = TemplateService.changecontent("ourapproach");
+        $scope.menutitle = NavigationService.makeactive("OurApproach");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         if (typeof $.fn.fullpage.destroy == 'function') {
@@ -146,53 +146,60 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        setTimeout(function() {
+
+
             initMap = function() {
-              var myLatLng = {lat: 19.183042, lng: 72.949746};
+                var myLatLng = {
+                    lat: 19.183042,
+                    lng: 72.949746
+                };
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 17,
                     center: myLatLng,
                     disableDefaultUI: true,
                     scrollwheel: false
                 });
-             var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Weavers Pre-school</h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>WEAVERS</b>,</p>'+
-            '</div>'+
-            '</div>';
+                var contentString = '<div id="content">' +
+                    '<div id="siteNotice">' +
+                    '</div>' +
+                    '<h1 id="firstHeading" class="firstHeading">Weavers Pre-school</h1>' +
+                    '<div id="bodyContent">' +
+                    '<p><b>WEAVERS</b>,</p>' +
+                    '</div>' +
+                    '</div>';
 
-            var infowindow = new google.maps.InfoWindow({
-        content: contentString
-      });
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
 
                 function toggleBounce() {
                     if (marker.getAnimation() !== null) {
-                      marker.setAnimation(null);
+                        marker.setAnimation(null);
                     } else {
-                      marker.setAnimation(google.maps.Animation.BOUNCE);
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
                     }
-                  }
-                var image = '../img/contact/mapmarker.png';
+                }
+                var image = 'img/contact/mapmarker.png';
                 var marker = new google.maps.Marker({
-                  position: myLatLng,
-                  map: map,
-                  icon: image,
-                  title: 'Uluru (Ayers Rock)',
-                    animation: google.maps.Animation.DROP
+                    position: myLatLng,
+                    map: map,
+                    icon: image,
+                    title: 'Weavers',
+                    animation: google.maps.Animation.DROP,
+                    optimized: false
                 });
                 marker.addListener('click', function() {
-                  infowindow.open(map, marker);
+                    infowindow.open(map, marker);
                 });
-
-        // var marker = new google.maps.Marker({
-        //   position: myLatLng,
-        //   map: map,
-        // });
+                // var marker = new google.maps.Marker({
+                //   position: myLatLng,
+                //   map: map,
+                // });
             };
-        }, 100);
+
+            setTimeout(function() {
+              initMap();
+            },100);
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -208,6 +215,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+
+    $scope.formClass = "form-in";
+    $scope.formSlide = function(){
+      if($scope.formClass == "form-in"){
+        $scope.formClass = "form-out";
+      }else {
+        $scope.formClass = "form-in";
+      }
+    }
 })
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
@@ -227,7 +243,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $.jStorage.set("language", "en");
             }
         }
-        //  $rootScope.$apply();
     };
 
 
