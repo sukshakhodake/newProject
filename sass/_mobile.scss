@@ -411,6 +411,9 @@ margin:0;
 .modal-dialog {
         width: 90%;
 }
+.prgm-dcrpt .h100 {
+    height: 40vh;
+}
 }
 
 @media (max-width: 480px) {
@@ -418,6 +421,10 @@ margin:0;
     font-size: 15px;
     line-height: 120%;
     left: 2%!important;
+}
+.bird-tel img {
+    width: 13%;
+    margin: 0 auto;
 }
 .sec-style h2 {
     font-size: 30px;
@@ -563,10 +570,24 @@ p {
 .parts .mgt50 {
     margin-top: 20px;
 }
+.enviornment-sec {
+    height:275px!important;
+    p {
+    height: 200px!important;
+}
+}
+.prgm-dcrpt {
+    padding-top: 60px;
+}
+.pdt150 {
+    padding-top: 120px;
+}
 }
 
 @media (max-width: 360px) {
-
+.programmes-sec p {
+    height: 135px;
+}
 
 .main-slide {
     display: none;
@@ -574,14 +595,16 @@ p {
 .parts .mgt50 {
     margin-top: 0px;
 }
-.story2 p, .programmes-sec p, .environment .enviornment-sec p {
+.story2 p, .environment .enviornment-sec p {
     height: 105px;
 }
+
 .prgm-dcrpt {
     padding-top: 105px;
 }
 .programmes-sec {
-    padding: 37px 35px;
+    padding: 37px 20px;
+    border-radius: 70px;
 }
 .environment .enviornment-sec {
     border-radius: 70px;
