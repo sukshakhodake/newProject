@@ -45,19 +45,22 @@ width="100%" height="100%" frameborder="0" style="border:0" scroll-wheel="false"
                                 <input type="email" ng-model="formData.email" name="email" class="form-control" id="email" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" ng-model="formData.mobile" name="mobile" class="form-control" id="mobile" placeholder="Mobile">
+                                <input type="tel" ng-model="formData.mobile" name="mobile" class="form-control" id="mobile" placeholder="Mobile">
                             </div>
                             <div class="form-group">
                                 <textarea ng-model="formData.comment" name="comment" class="form-control" rows="5" id="comment" placeholder="Note" required></textarea>
                             </div>
                         <div class="sub-btn text-center">
-                            <button type="submit" class="btn btn-default know-more font-dkcat">Submit</button>
+                            <button type="submit" class="btn btn-default know-more font-dkcat" ng-click="thankyou()">Submit</button>
                         </div>
                                             <div class="thankyou" ng-show="flags.thankyou">
-                        <h2>Thank you for getting in touch!</h2>
+                                                  <div class="get-center">
+                        <h2>Thank You !!</h2>
                     </div>
+                      </div>
                                             </form>
                     </div>
+                    
 
                 </div>
 

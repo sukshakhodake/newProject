@@ -25,27 +25,33 @@
 <div ng-controller="headerctrl">
 <div id="slideout" class="{{formClass}}" ng-click="formSlide();">
   <img src="img/contact.png" alt="Feedback" />
+  </div>
   <div>
       <div id="slideout" class="{{formClass}}">
   <div id="slideout_inner">
-    <form class="fdb-form1 form-inline">
+    <form class="fdb-form1 form-inline" name="contactUsForm" ng-submit="submitForm(formData)">
       <i class="fa fa-times pull-right" ng-click="formSlide();" aria-hidden="true"></i>
+      <div>
       <div class="form-group">
-          <input type="text" class="form-control" id="usr" placeholder="Name">
+          <input type="text" ng-model="formData.name" name="name" class="form-control" id="usr" placeholder="Name">
       </div>
       <div class="form-group">
-          <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+          <input type="tel" ng-model="formData.mobile" name="mobile" class="form-control" id="mobile" placeholder="Mobile">
       </div>
-      <br>
+     </div>
       <div class="form-group">
-          <input type="email" class="form-control" id="email" placeholder="Email Address">
+          <input type="email" ng-model="formData.email" name="email" class="form-control" id="email" placeholder="Email Address">
       </div>
       <div class="form-group">
-          <input type="text" class="form-control" id="note" placeholder="Note">
+          <input type="text" ng-model="formData.comment" name="comment"  class="form-control" id="note" placeholder="Note">
       </div>
       <div class="sub-btn text-center">
-          <button type="button" class="btn btn-default know-more font-dkcat">Submit</button>
+          <button class="btn btn-default know-more font-dkcat" type="submit" ng-click="thankyou()">Submit</button>
       </div>
+                        <!--<div class="thankyou-down" ng-show="flags.thankyou">
+                            <div class="get-center">
+                                <h2>Thank You !!</h2>
+                            </div>-->
   			</form>
   </div>
     </div>

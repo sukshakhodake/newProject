@@ -196,12 +196,24 @@ margin: 0 auto;
     width: 90%;
     margin: 0 auto;
 }
+.brdcontact img {
+    width: 250px;
+}
 }
 @media (max-width: $screen-xs-max) {
     .navbar-default .navbar-toggle {
     position: absolute;
     right: 20px;
 }
+#slideout_inner .fdb-form1 {
+    height: auto;
+}
+#slideout_inner .form-inline .form-group {
+    margin-bottom: 0px;
+}
+// .prgm-dcrpt .h100 {
+//     height: 41vh;
+// }
 .option-desc1 {
       padding: 40px;
     width: 100%;
@@ -396,6 +408,9 @@ margin:0;
     height: auto;
     min-height: auto;
 }
+.modal-dialog {
+        width: 90%;
+}
 }
 
 @media (max-width: 480px) {
@@ -482,9 +497,9 @@ margin:0;
     padding-top: 0px;
 }
 .contact-sec {
-      border-radius: 70px;
+       border-radius: 70px;
     width: 310px;
-        padding: 33px 20px;
+    padding: 25px 20px;
     li {
     font-size: 13px;
     margin-left: 10px;

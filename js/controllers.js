@@ -118,6 +118,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.tab = 1;
+           if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
 
     })
     .controller('OurTeachersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -126,6 +129,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Our Teachers");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+           if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
     })
     .controller('GalleryCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -133,15 +139,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Gallery");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+           if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
     })
-    .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("contactus");
         $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-
+   if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
             initMap = function() {
                 var myLatLng = {
                     lat: 19.183042,
@@ -210,6 +221,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 }
             });
             };
+             $scope.thankyou = function() {
+    $uibModal.open({
+      animation: true,
+      templateUrl: "views/modal/thankyou.html",
+      scope: $scope,
+      windowClass: "width80"
+    });
+  };
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -217,6 +236,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Art Attack");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+           if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
     })
 
 .controller('headerctrl', function($scope, TemplateService) {
@@ -237,6 +259,22 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formClass = "form-in";
       }
     }
+
+    $scope.formData = {};
+    $scope.flags = {};
+    $scope.submitForm = function() {
+            $scope.flags.thankyou = false;
+            $scope.formData.subject = "Contact Us form details";
+            console.log("ffff", $scope.formData);
+            NavigationService.submitForm($scope.formData, function(res) {
+                if (res.value) {
+                $scope.flags.thankyou = true;
+                $scope.formData = {};
+                } else {
+
+                }
+            });
+            };
 })
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
