@@ -22,12 +22,14 @@
     <br>
 
 </div> -->
-
-<div id="slideout" class="{{formClass}}" ng-click="formSlide();"  ng-controller="headerctrl">
+<div ng-controller="headerctrl">
+<div id="slideout" class="{{formClass}}" ng-click="formSlide();">
   <img src="img/contact.png" alt="Feedback" />
+  <div>
+      <div id="slideout" class="{{formClass}}">
   <div id="slideout_inner">
     <form class="fdb-form1 form-inline">
-      <i class="fa fa-times pull-right" aria-hidden="true"></i>
+      <i class="fa fa-times pull-right" ng-click="formSlide();" aria-hidden="true"></i>
       <div class="form-group">
           <input type="text" class="form-control" id="usr" placeholder="Name">
       </div>
@@ -46,5 +48,6 @@
       </div>
   			</form>
   </div>
-</div>
+    </div>
+    </div>
   <!-- <img src="img/brochure.png" alt="" class="img-responsive"> -->

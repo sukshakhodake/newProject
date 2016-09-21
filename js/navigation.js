@@ -9,7 +9,7 @@ else {
 
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function() {
+.factory('NavigationService', function($http) {
   // var navigation = [{
   //   name: "Home",
   //   classis: "active",
@@ -76,6 +76,14 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return menuname;
     },
+      submitForm: function(mydata, callback) {
+    $http({
+      url: 'http://ting.in/1899/mail.php?name='+mydata.name+'&email='+mydata.email+'&phone='+mydata.phone+'&comment='+mydata.comment+'&subject='+mydata.subject,
+      method: 'GET',
+      withCredentials: true,
+      data: mydata
+    }).success(callback);
+  }
 
   };
 });

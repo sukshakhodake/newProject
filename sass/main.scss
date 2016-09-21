@@ -141,7 +141,9 @@ a {
 .relate {
     position: relative;
 }
-
+.min-hght{
+    min-height: 100vh;
+}
 .get-center {
     @include position(absolute, 50% null null 50%);
     @include transform(translate(-50%,-50%));
@@ -151,6 +153,7 @@ a {
 .section {
     background-size: cover;
     height: 100vh!important;
+    background-position: center;
 }
 
 .fp-tableCell {
@@ -176,12 +179,12 @@ a {
 
 .three {
     background-image: url('../img/sec3/home3.png');
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .four {
     background-image: url('../img/sec4/home4.png');
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .five {
@@ -191,6 +194,9 @@ a {
 .six {
     background-image: url('../img/sec6/home6.png');
 }
+textarea{
+    resize:none;
+}
 // sec1
 
 .pos-set1 {
@@ -199,12 +205,10 @@ a {
         margin: 0 auto;
     }
 }
-
 .birdset1 {
     position: absolute;
-    top: 57%;
+    bottom: 10%;
     left: 50%;
-
     img {
         width: 300px;
     }
@@ -242,7 +246,7 @@ a {
     position: absolute;
     top: 28%;
     left: 48%;
-    width: 45%;
+    width: 600px;
 
     h3 {
         color: #ef4f22;
@@ -286,7 +290,7 @@ a {
     left: 50%;
     padding: 52px 35px 47px;
     top: 50%;
-    transform: translate(-50%,-50%);
+    @include transform(translate(-50%,-50%));
 
     h3 {
         color: #ef4f22;
@@ -397,7 +401,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    @include transform(translate(-50%,-50%));
 }
 
 .camera-sec {
@@ -444,13 +448,13 @@ a {
 
 .environment {
     .enviornment-sec {
-        background-color: #f4efcf;
-        border-radius: 105px;
-        width: 100%;
-        position: relative;
-        left: 42%;
-        top: 125px;
-        padding: 40px 54px;
+    background-color: #f4efcf;
+    border-radius: 105px;
+    width: 48%;
+    position: relative;
+    left: 0;
+    top: 125px;
+    padding: 40px 54px;
 
         h3 {
             color: #6a4657;
@@ -503,13 +507,15 @@ a {
 }
 
 .bird-tel {
-    position: relative;
+ position: relative;
     top: 29px;
-    left: 99px;
+    left: 50px;
     z-index: 9;
+    width: 52%;
+    float: left;
 
     img {
-        width: 510px;
+        width: 100%;
     }
 }
 
@@ -518,18 +524,19 @@ a {
         width: 140px;
     }
     position: absolute;
-    top: -17px;
-    left: -29px;
+    top: 20%;
+    left: 5%;
 }
 
 .contact-sec {
-    background-color: #f4efcf;
+      background-color: #f4efcf;
     border-radius: 116px;
-    width: 83%;
     position: relative;
     left: -31px;
     top: 70px;
     padding: 41px 52px;
+    width: 48%;
+    float: left;
 }
 
 h3 {
@@ -540,6 +547,9 @@ h3 {
 
 ul {
     padding: 0;
+}
+a{
+    cursor:pointer;
 }
 
 li {
@@ -650,6 +660,7 @@ li {
 }
 
 .navbar-collapse {
+     text-align: center;
     ul {
         margin: 0;
     }
@@ -659,15 +670,17 @@ li {
         vertical-align: middle;
     }
 }
-
 .menu {
-    display: inline-block;
+       display: inline-block;
+    float: none;
 
     img {
         width: 130px;
     }
-
-    li > a {
+    li {
+        margin: 0;
+    margin-top: 17px;
+        a {
         font-family: "Hind-Regular";
         color: #783620;
         @include transition(all ease 300ms);
@@ -677,14 +690,21 @@ li {
             text-decoration: none;
             color: darken(#783620, 20%);
         }
+        }
+    }
+    .logo-main{
+    margin-top:0;
+    a{
+            padding: 5px 10px;
+    }
     }
 }
-
 .curve {
     background: url("../img/curve.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 40px;
+    margin-top: -1px;
 }
 
 .main-hd {
@@ -695,12 +715,10 @@ li {
     background-color: transparent;
     border-color: #e7e7e7;
 }
-
 .navbar-fixed-top {
     top: 0;
     border-width: 0 0 0;
 }
-
 .social {
     margin-top: 25px;
     float: right;
@@ -783,7 +801,7 @@ li {
         z-index: 99;
 
         img {
-            width: 200px;
+            width: 150px;
         }
     }
 
@@ -837,6 +855,8 @@ li {
 
         p {
             color: #5c392d;
+
+    font-family: "Hind-Regular";
         }
     }
 }
@@ -852,7 +872,7 @@ li {
     z-index: 99;
 
     img {
-        width: 750px;
+        width: 600px;
     }
 }
 ///headerc
@@ -946,14 +966,14 @@ li {
     background-image: url('../img/ourstory/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .ourstory-page2 {
     background-image: url('../img/ourstory/ourvision.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 
     .ourstory-bir2 {
         position: absolute;
@@ -962,7 +982,7 @@ li {
         z-index: 999;
 
         img {
-            width: 370px;
+            width: 300px;
         }
     }
 }
@@ -971,7 +991,7 @@ li {
     background-image: url('../img/ourstory/ourmission-bag.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 
     .ourmission-bir3 {
         position: absolute;
@@ -980,7 +1000,7 @@ li {
         z-index: 999;
 
         img {
-            width: 400px;
+            width: 380px;
         }
     }
 }
@@ -999,15 +1019,16 @@ li {
     position: absolute;
     right: 18%;
     bottom: 0;
-    z-index: 999;
+    z-index: 2;
 
     img {
-        width: 250px;
+        width: 220px;
     }
 }
 
 .tab-part {
     position: relative;
+    z-index: 0;
 }
 
 .our-story-content {
@@ -1107,7 +1128,7 @@ li {
     z-index: 999;
 
     img {
-        width: 200px;
+        width: 180px;
     }
 }
 //modified
@@ -1123,13 +1144,13 @@ li {
     background-color: #f4efcf;
     border-radius: 100px;
     padding: 40px 110px;
-    height: 420px;
+    height: 485px;
     position: relative;
     z-index: 99;
     width: 75%;
     margin-left: 144px;
+    z-index: 0;
 }
-
 .ourstory-bir1-2 {
     position: absolute;
     top: 16%;
@@ -1165,7 +1186,7 @@ li {
 
 .our-team-content1 {
     background-color: #fffdf9;
-    padding: 50px;
+    padding: 80px;
     border-radius: 86px;
     position: relative;
 
@@ -1183,7 +1204,7 @@ li {
 
 .bird1-team {
     position: absolute;
-    top: 250px;
+    bottom: -130px;
     right: 0;
 
     img {
@@ -1356,35 +1377,34 @@ li {
     background-image: url('../img/programmes/mother.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .ourprogrammes-page2 {
     background-image: url('../img/programmes/pre-nursery.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .ourprogrammes-page4 {
     background-image: url('../img/programmes/nursery.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .ourprogrammes-page3 {
     background-image: url('../img/programmes/daycare.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sec-holder {
     border-radius: 50px;
     background-color: #fff;
 }
-
 .sec-style {
     h2 {
         color: #dd701f;
@@ -1398,6 +1418,7 @@ li {
         line-height: 1.4;
         color: #63463d;
         font-weight: 600;
+    font-family: "Hind-Regular";
     }
 }
 
@@ -1546,7 +1567,6 @@ li {
 //   border-radius: 5px;
 //   position: relative;
 // }
-
 .img1 {
     height: 160px;
     width: auto;
@@ -1558,7 +1578,7 @@ li {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        @include transform(translate(-50%,-50%));
     }
 }
 
@@ -1656,7 +1676,8 @@ li {
 
 .gallery-page {
     background-image: url('../img/gallery/gallerybackground.png');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 
@@ -1700,11 +1721,12 @@ li {
     }
 }
 ///contact us
-
 .pdt80 {
     padding-top: 80px;
 }
-
+.cont-width{
+    width:1200px;
+}
 .contact-sec1 {
     background-color: #fefcec;
     border-radius: 116px;
@@ -1722,7 +1744,7 @@ li {
 
 .contact-background {
     background-image: url("../img/contact/background-contact.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 
@@ -1788,6 +1810,10 @@ li {
     img {
         opacity: 1;
     }
+}
+
+.thankyou {
+
 }
 
 .contact-form {}
@@ -1889,7 +1915,26 @@ li {
     @include transition(all 300ms linear);
   }
 }
+footer {
+    height: 50px;
+    background: #111;
+    padding: 16px 0;
+        font-family: "Hind-Regular";
+    p{
+        color:#fff;
+            font-family: "Hind-Regular";
+    }
+    a{
+            font-family: "Hind-Regular";
+        color:#fff;
+        &:hover,:focus{
+            color:darken(#fff, 20%);
+            text-decoration: none;
+        }
+    }
+}
 // .form-in { @include transform(translateX(0px)); }
 //bootstrap forms
 /* Start writing sass here */
 @import "fancybox-override";
+@import "mobile";

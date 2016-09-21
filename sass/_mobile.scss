@@ -1,0 +1,579 @@
+@media (max-width: 1200px) {
+    .option-desc2 {
+    height: auto;
+}
+.bird2-team img {
+    width: 180px;
+}
+        .menu{ 
+        img {
+    width: 100px;
+        }
+    li {
+    margin: 20px 8px 0;
+        }
+    }
+    .nav > li > a {
+    padding: 10px 2px;
+}
+.birdset2 img {
+    width: 70%;
+}
+.bird1-team img {
+    width: 500px;
+}
+.bird4-team img {
+    width: 400px;
+}
+.option-desc1 {
+    height: auto;
+}
+.book-bird img {
+    width: 150px;
+}
+.ourstory-page2 .ourstory-bir2 img {
+    width: 190px;
+}
+.ourstory-page3 .ourmission-bir3 img {
+    width: 300px;
+}
+.ourstory-bir4 img {
+    width: 150px;
+}
+.bird-write img {
+    width: 500px;
+}
+.environment-page .flower img {
+    width: 150px;
+}
+.environ-desc li {
+    margin-bottom: 12px;
+    margin: 10px 0px 0;
+}
+.story2 {
+    background-color: #f4efcf;
+    padding: 45px 22px;
+    border-radius: 100px;
+    position: absolute;
+    top: 28%;
+    left: 52%;
+    width: 44%;
+     p {
+    line-height: 200%;
+    font-size: 15px;
+    margin: 0px 16px 0;
+}
+}
+.story1 {
+    left: 15%;
+}
+.programmes-sec {
+    border-radius: 100px;
+    width: 90%;
+}
+.environment .enviornment-sec {
+    border-radius: 100px;
+    left: 0%;
+    padding: 30px 54px;
+}
+
+.main-slide {
+    position: absolute;
+    right: -50px;
+    bottom: 10px;
+    .h80 {
+    height: 65vh;
+}
+}
+.cont-width{
+    width:900px;
+}
+.prog-bir1-2 img {
+    width: 85px;
+}
+.option-desc {
+    height: auto;
+    min-height: 440px;
+}
+}
+@media (max-width: $screen-sm-max) {
+    .bird1-team img {
+    width: 400px;
+}
+.ourstory-page3 .ourmission-bir3 img {
+    width: 250px;
+}
+.bird3-team {
+    right: 0;
+}
+.bird-tel {
+    width: 100%;
+    img {
+    width: 50%;
+    margin: 0 auto;
+}
+}
+.brdcontact {
+    right: 0;
+}
+.bird2-team img {
+    width: 100px;
+}
+.bird-write img {
+    width: 400px;
+}
+.ourstory-page2 .ourstory-bir2 {
+    right: -64px;
+}
+.book-bird {
+    right: -34px;
+}
+.social {
+    margin-right: -25px;
+    a {
+        .fa {
+    margin-right: 2px;
+            }
+        }
+    }
+        .nav > li > a {
+    padding: 10px 2px;
+}
+.menu li {
+    margin: 20px 4px 0;
+}
+.story1 {
+    font-size: 20px;
+    line-height: 125%;
+    position: absolute;
+    left: 11%;
+}
+.story2 {
+    padding: 45px 20px;
+    top: 20%;
+    p {
+    line-height: 125%;
+    font-size: 15px;
+}
+h3 {
+    font-size: 40px;
+}
+}
+.programmes-sec{ h3 {
+    font-size: 40px;
+}
+.programmes-sec p {
+    font-size: 15px;
+    line-height: 125%;
+}
+}
+.prgm-dcrpt .h100 {
+    height: 50vh;
+}
+
+.parts .h100 {
+    height: 35vh;
+}
+.parts {
+.mt_holder {
+display:block;
+margin: 0 auto;
+}
+}
+.main-slide .h80 {
+    height: 45vh;
+}
+.contact-sec {
+    background-color: #f4efcf;
+    border-radius: 116px;
+    width: 83%;
+    position: relative;
+    left: 50%;
+    top: 70px;
+    @include transform(translateX(-50%));
+}
+.environment .enviornment-sec {
+    width: 90%;
+    margin: 0 auto;
+}
+}
+@media (max-width: $screen-xs-max) {
+    .navbar-default .navbar-toggle {
+    position: absolute;
+    right: 20px;
+}
+.option-desc1 {
+      padding: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+.book-bird {
+    right: 0;
+}
+.book-bird img {
+    width: 100px;
+}
+.ourstory-page2 .ourstory-bir2 {
+    bottom: -95px;
+    right: 0;
+}
+.option-desc,.option-desc2 {
+width: 100%;
+    margin-left: 0px;
+}
+.environment-page .flower img {
+   display: none;
+}
+.option-sec {
+    position: absolute;
+    top: -48px;
+        text-align: center;
+    width: 100%;
+.btn-default1 {
+    display: inline-block;
+    margin: 10px -2.1px;
+    border-radius: 0px 0 0 0px;
+    border-right: 1px solid #fff;
+    text-align: center;
+}}
+.ourstory-page3 .ourmission-bir3 {
+    bottom: -115px;
+    right: -37px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:transparent;
+}
+.contact-sec1 {
+    border-radius: 80px;
+    position: static; 
+    left: 0;
+    bottom: 0px;
+    padding: 41px 50px;
+    .para-set {
+    display: block;
+}
+}
+.contact-background h3 {
+    color: #fefcec;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 15px;
+    margin-left: 0px;
+    text-align: center;
+}
+.brdcontact {
+        top: -40px;
+    img {
+    width: 180px;
+}
+}
+.fdb-form {
+    padding: 40px;
+}
+.navbar-default { 
+    .navbar-toggle {
+        margin-top: 18px;
+        background-color: #fefcec;
+        border-radius: 0;
+}
+.navbar-brand {
+    float: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 70px;
+    margin: 0 auto;
+}
+.menu {
+    display: block;
+    li{
+        display: block;
+        margin: 0;
+    }
+}
+    .social {
+    margin-right: 0px;
+    float:none;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+}
+.birdset2 {
+    left: 0px;
+    img {
+      width: auto;
+   height: 30vh;
+}
+.story1 {
+    font-size: 16px;
+    line-height: 125%;
+    left: 11%;
+    top: 45%;
+}
+}
+.story2 {
+    top: 45%;
+    width: 90%;
+    left: 5%;
+p {
+    margin: 0px 11px 0;
+}
+}
+.pos-set1 img {
+    width: 180px;
+    margin: 0 auto;
+}
+.form-in img {
+    width: 30px;
+}
+#slideout_inner .fdb-form1 {
+    padding: 30px 10px;
+    border-radius: 70px 0 0 70px;
+    width: 290px;
+}
+.main-slide .h80 {
+    height: 30vh;
+}
+.parts {.mt_holder {
+    .back-width {
+    width: 90px;
+    margin: 0 auto;
+}
+.parts-sec {
+    top: 9px;
+    left: 23px;
+}
+.parts-sec2 {
+    left: 35px;
+    width: 135px;
+}
+.parts-sec3 {
+    left: 10px;
+}
+.parts-sec4 {
+    right: 40px;
+}
+    .img1-sec3 {
+    height: 70px;
+}
+ .img2-sec3 {
+    height: 90px;
+}
+.parts-sec3 {
+    width: 90px;
+}
+.parts-sec4 {
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    width: 75px;
+    .img2-sec4 {
+    height: 60px;
+}
+}
+}
+}
+.contact-sec {
+    border-radius: 100px;
+    width: 400px;
+}
+.bird-tel img {
+    width: 25%;
+    margin: 0 auto;
+}
+footer {
+    height: auto;
+    p{
+text-align: center;
+    }
+    .mobile-m0{
+margin:0;
+    }
+}
+.option-desc {
+    height: auto;
+    min-height: auto;
+}
+}
+
+@media (max-width: 480px) {
+    .story1 {
+    font-size: 15px;
+    line-height: 120%;
+    left: 2%!important;
+}
+.sec-style h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.option-sec {
+    padding: 5px;
+}
+.contact-sec1{
+    h3{
+        font-size: 30px;
+    }
+    li {
+    font-size: 12px;
+    line-height: 120%;
+    }
+}
+.contact-sec1 {
+    margin-top: 20px;
+}
+.brdcontact img {
+    width: 120px;
+}
+.option-desc1,.option-desc,.option-desc2,.contact-sec1,.fdb-form  {
+    padding: 20px;
+        border-radius: 50px;
+            margin-bottom: 20px;
+            .sec-style p {
+    font-size: 15px;
+    line-height: 120%;
+}
+}
+.option-sec .btn-default1 {
+    display: inline-block;
+    margin: 5px -2.1px;
+        width: auto;
+            font-size: 14px;
+                padding: 6px;
+}
+.option-desc2 li ,.lst-bullet li {
+    line-height: 120%;
+    margin: 5px 16px 0;
+}
+.ourteam-page .main-head {
+    padding-bottom: 0px;
+}
+.bird1-team,.bird-write,.bird2-team,.swimbird,.bird4-team,.book-bird,.lake,.ourstory-bir2,.ourmission-bir3,.ourstory-bir4,.prog-bir1,.prog-bir2,.prog-bir4,.prog-bir3,.prog-bir1-2,.prog-flower,.prog-bir2-2,.ourstory-bir1-2    {
+    display: none;
+}
+.book-bird {
+    display: none;
+}
+.bird3-team img {
+    width: 120px;
+}
+.sec-align1 {
+    position: relative;
+    padding-bottom: 100px;
+}
+.our-team-content1,.our-team-content2,.our-team-content5 {
+    padding: 35px;
+    border-radius: 70px;
+    margin-top: 80px;
+     .sub-head {
+    font-size: 30px;
+}
+.post {
+    font-size: 18px;
+    color: #e45854;
+}
+ p {
+    font-size: 14px;
+    line-height: 120%;
+ }
+}
+.pdt180 {
+    padding-top: 0px;
+}
+.contact-sec {
+      border-radius: 70px;
+    width: 310px;
+        padding: 33px 20px;
+    li {
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 15px;
+    margin: 3px 16px 0;
+}
+h3 {
+    color: #40180c;
+    font-size: 24px;
+    margin: 0 16px;
+}
+}
+.story2,.programmes-sec,.environment .enviornment-sec{
+    height: 220px;
+        h3 {
+    font-size: 24px;
+}
+p {
+    line-height: 110%;
+    font-size: 14px;
+    height: 133px;
+    overflow: hidden;
+}
+}
+.pdt110 {
+    padding-top: 55px;
+}
+.programmes-sec{
+        padding: 40px 35px 47px;
+     p{
+        height: 120px;
+}
+}
+.environment .enviornment-sec {
+    padding: 30px 30px;
+}
+.gallery-page p {
+    font-size: 18px;
+}
+.pos-set2 img {
+    width: 300px;
+}
+.camera-sec img {
+    width: 130px;
+}
+    .story2 {
+    padding: 22px 20px;
+    top: 51%;
+    width: 95%;
+    left: 2%;
+    height: 220px;
+        border-radius: 70px;
+.know-more {
+    padding: 5px 20px;
+    font-size: 12px;
+}
+}
+.story2 {
+    height: 150px;
+}
+.parts .mgt50 {
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 360px) {
+
+
+.main-slide {
+    display: none;
+}
+.parts .mgt50 {
+    margin-top: 0px;
+}
+.story2 p, .programmes-sec p, .environment .enviornment-sec p {
+    height: 105px;
+}
+.prgm-dcrpt {
+    padding-top: 105px;
+}
+.programmes-sec {
+    padding: 37px 35px;
+}
+.environment .enviornment-sec {
+    border-radius: 70px;
+    padding: 30px 20px;
+}
+.birdset2 img {
+    width: auto;
+    height: 33vh;
+}
+}

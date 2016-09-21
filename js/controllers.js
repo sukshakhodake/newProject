@@ -44,7 +44,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.$on('$viewContentLoaded', function() {
         $timeout(function() {
             $('.fullpage').fullpage();
-            // $('#scene').parallax();
             console.log($stateParams.name);
             $scope.homeval = $stateParams.name;
             switch ($scope.homeval) {
@@ -75,14 +74,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         }, 1000);
     });
-
-
-    // $scope.mySlides = [
-    //   'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-    //   'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-    //   'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-    //   'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
-    // ];
+           if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
 })
 
 .controller('OurApproachCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -200,6 +194,22 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             setTimeout(function() {
               initMap();
             },100);
+
+            $scope.formData = {};
+            $scope.flags = {};
+            $scope.submitForm = function() {
+            $scope.flags.thankyou = false;
+            //console.log("ffff", $scope.formData);
+            $scope.formData.subject = "Contact Us form details";
+            NavigationService.submitForm($scope.formData, function(res) {
+                if (res.value) {
+                $scope.flags.thankyou = true;
+                $scope.formData = {};
+                } else {
+
+                }
+            });
+            };
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -215,7 +225,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
-
+    $scope.isopen = false;
+    // $scope.formSlide = function() {
+    //     $scope.isopen = !$scope.isopen;
+    // };
     $scope.formClass = "form-in";
     $scope.formSlide = function(){
       if($scope.formClass == "form-in"){
