@@ -519,7 +519,18 @@ h3 {
     margin: 0 16px;
 }
 }
-.story2,.programmes-sec,.environment .enviornment-sec{
+.programmes-sec{
+            h3 {
+    font-size: 24px;
+}
+p {
+    line-height: 110%;
+    font-size: 14px;
+    height: 133px;
+    overflow: hidden;
+}
+}
+.story2,.environment .enviornment-sec{
     height: 220px;
         h3 {
     font-size: 24px;
@@ -535,7 +546,10 @@ p {
     padding-top: 55px;
 }
 .programmes-sec{
-        padding: 40px 35px 47px;
+            padding: 20px 14px 21px;
+    height: 182px;
+    margin-top: 10px;
+    border-radius: 70px;
      p{
         height: 120px;
 }
@@ -582,15 +596,24 @@ p {
 .pdt150 {
     padding-top: 120px;
 }
+.curve {
+    height: 10px;
+}
+.map-sec {
+    height: 70vh !important;
+}
 }
 
 @media (max-width: 360px) {
-.programmes-sec p {
-    height: 135px;
-}
-
 .main-slide {
     display: none;
+}
+.contact-sec {
+    border-radius: 70px;
+    width: 310px;
+    height: 180px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 .parts .mgt50 {
     margin-top: 0px;
@@ -603,8 +626,14 @@ p {
     padding-top: 105px;
 }
 .programmes-sec {
-    padding: 37px 20px;
-    border-radius: 70px;
+padding: 15px;
+    border-radius: 60px;
+    height: 220px;
+    margin-top: 20px;
+        width: 90%;
+    p {
+    height: 135px;
+}
 }
 .environment .enviornment-sec {
     border-radius: 70px;

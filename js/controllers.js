@@ -214,14 +214,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.formData.subject = "Contact Us form details";
             NavigationService.submitForm($scope.formData, function(res) {
                 if (res.value) {
-                $scope.flags.thankyou = true;
-                $scope.formData = {};
-                } else {
-
-                }
-            });
-            };
-             $scope.thankyou = function() {
+                 $scope.thankyou = function() {
     $uibModal.open({
       animation: true,
       templateUrl: "views/modal/thankyou.html",
@@ -229,6 +222,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       windowClass: "width80"
     });
   };
+                $scope.formData = {};
+                } else {
+
+                }
+            });
+            };
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -263,12 +262,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.formData = {};
     $scope.flags = {};
     $scope.submitForm = function() {
-            $scope.flags.thankyou = false;
+            // $scope.flags.thankyou = false;
             $scope.formData.subject = "Contact Us form details";
             console.log("ffff", $scope.formData);
             NavigationService.submitForm($scope.formData, function(res) {
                 if (res.value) {
-                $scope.flags.thankyou = true;
+                // $scope.flags.thankyou = true;
+                          $scope.thankyou = function() {
+    $uibModal.open({
+      animation: true,
+      templateUrl: "views/modal/thankyou.html",
+      scope: $scope,
+      windowClass: "width80"
+    });
+  };
                 $scope.formData = {};
                 } else {
 
