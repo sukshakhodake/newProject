@@ -55,118 +55,122 @@
     </div>
 </div> -->
 <div class="ourstory-page1  pdt150" ng-class="{'ourstory-page1':tab == 1,'ourstory-page2':tab ==2,'ourstory-page3':tab ==3,'ourprogrammes-page4':tab ==4}">
+    <div class="about-inside">
+        <div class="container">
 
-    <div class="container">
+            <div class="ourstory-bir1-2" ng-if="tab == 1">
+                <img src="img/ourstory/fly1.png" alt="" class="img-responsive">
+            </div>
 
-        <div class="ourstory-bir1-2" ng-if="tab == 1">
-            <img src="img/ourstory/fly1.png" alt="" class="img-responsive">
-        </div>
+            <div class="ourmission-1">
+                <img src="img/programmes/fly.png" alt="" class="img-responsive">
+            </div>
+            <div class="ourstory-bir4" ng-if="tab == 4">
+                <img src="img/ourstory/webelieve.png" alt="" class="img-responsive">
+            </div>
 
-        <div class="ourmission-1">
-            <img src="img/programmes/fly.png" alt="" class="img-responsive">
-        </div>
-        <div class="ourstory-bir4" ng-if="tab == 4">
-            <img src="img/ourstory/webelieve.png" alt="" class="img-responsive">
-        </div>
+            <div class="tab-part">
+                <!-- <div class="row"> -->
+                <!-- <div class="col-md-3"> -->
+                <div class="option-sec font-dkcat display-inline">
+                    <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">About Us</button>
+                    <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">Our Vision</button>
+                    <button type="button" class="btn btn-default1" ng-click="tab = 3" ng-class="{'active':tab == 3}">Our Mission</button>
+                    <button type="button" class="btn btn-default1" ng-click="tab = 4" ng-class="{'active':tab == 4}">We Believe</button>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="col-md-9 mgl-135"> -->
 
-<div class="tab-part">
-  <!-- <div class="row"> -->
-      <!-- <div class="col-md-3"> -->
-          <div class="option-sec font-dkcat display-inline">
-              <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">About Us</button>
-              <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">Our Vision</button>
-              <button type="button" class="btn btn-default1" ng-click="tab = 3" ng-class="{'active':tab == 3}">Our Mission</button>
-              <button type="button" class="btn btn-default1" ng-click="tab = 4" ng-class="{'active':tab == 4}">We Believe</button>
-          </div>
-      <!-- </div> -->
-      <!-- <div class="col-md-9 mgl-135"> -->
+                <!-- <div class="text-center"> -->
+                <div class="option-desc1 text-justify display-inline">
+                    <div class="mother-toddler sec-style" ng-if="tab == 1">
+                        <p class="font-hind-regular text-justify">
+                            <h2 class="text-uppercase font-dkcat text-center">About Us</h2>
+                            <p>
+                                I moved from Chandigarh to Mumbai a few years ago. While I love all that the city has to offer, one thing it sorely lacks is a sense of space.
+                            </p>
+                            <p>I can’t imagine compromising on a child’s upbringing for the lack of space to run around and discover. Kids deserve the freedom to explore and find out things about themselves and the world around them. I believe that it is
+                                essential to integrate outdoor learning along with classroom learning, which is, unfortunately, largely missing from schools today. I wanted to build the kind of space where my husband and I would be happy to send our child,
+                                when we have one. That is the ideal that The Weavers Preschool strives to achieve. </p>
+                            <p>The Weavers Preschool derives its name from the weaver bird. Nature endows the weaver bird with an instinctive talent for weaving elegant nests from strands of leaves and grass. In the same manner, so many amazing abilities
+                                lie hidden within children. At The Weavers Preschool we encourage kids to discover and develop these talents through constant encouragement, practice and positive reinforcement.</p>
+                    </div>
+                    <div class="pre-nursery sec-style lst-bullet" ng-if="tab == 2">
+                        <h2 class="text-uppercase font-dkcat text-center">Our Vision</h2>
+                        <ul>
+                            <li> Is to nurture and enhance the abilities, talents and skills of every child.
+                            </li>
+                            <li> Is to ignite a sense of curiosity and create lifelong learners for a strong and competent future generation.
+                            </li>
+                            <li>Is to provide a firm foundation and pave a path for enriching educational experiences.
 
-  <!-- <div class="text-center"> -->
-            <div class="option-desc1 text-justify display-inline">
-        <div class="mother-toddler sec-style" ng-if="tab == 1">
-            <p class="font-hind-regular text-justify">
-                <h2 class="text-uppercase font-dkcat text-center">About Us</h2>
-                <p>
-                    I moved from Chandigarh to Mumbai a few years ago. While I love all that the city has to offer, one thing it sorely lacks is a sense of space.
-                </p>
-                <p>I can’t imagine compromising on a child’s upbringing for the lack of space to run around and discover. Kids deserve the freedom to explore and find out things about themselves and the world around them. I believe that it is essential to integrate outdoor learning along with classroom learning, which is, unfortunately, largely missing from schools today. I wanted to build the kind of space where my husband and I would be happy to send our child, when we have one. That is the ideal that The Weavers Preschool strives to achieve. </p>
-        <p>The Weavers Preschool derives its name from the weaver bird. Nature endows the weaver bird with an instinctive talent for weaving elegant nests from strands of leaves and grass. In the same manner, so many amazing abilities lie hidden within children. At The Weavers Preschool we encourage kids to discover and develop these talents through constant encouragement, practice and positive reinforcement.</p>
-        </div>
-        <div class="pre-nursery sec-style lst-bullet" ng-if="tab == 2">
-            <h2 class="text-uppercase font-dkcat text-center">Our Vision</h2>
-            <ul>
-                <li> Is to nurture and enhance the abilities, talents and skills of every child.
-</li>
-                <li> Is to ignite a sense of curiosity and create lifelong learners for a strong and competent future generation.
-</li>
-                <li>Is to provide a firm foundation and pave a path for enriching educational experiences.
+                            </li>
+                            <li> Is to impart values, morals, manners and etiquettes to create a healthy society.
 
-                </li>
-                <li> Is to impart values, morals, manners and etiquettes to create a healthy society. 
+                            </li>
+                        </ul>
 
-                </li>
-            </ul>
+                    </div>
+                    <div class="daycare sec-style lst-bullet" ng-if="tab == 3">
+                        <h2 class="text-uppercase font-dkcat text-center">Our Mission</h2>
+                        <ul>
+                            <li>To frame a developmentally appropriate curriculum that respects and nurtures every child.
 
-        </div>
-        <div class="daycare sec-style lst-bullet" ng-if="tab == 3">
-            <h2 class="text-uppercase font-dkcat text-center">Our Mission</h2>
-            <ul>
-                <li>To frame a developmentally appropriate curriculum that respects and nurtures every child.
+                            </li>
+                            <li>
+                                To adopt a dynamic approach that exposes children to myriad experiences in academics, art, music, sports and to a variety of cultures.
 
-                </li>
-                <li>
-                    To adopt a dynamic approach that exposes children to myriad experiences in academics, art, music, sports and to a variety of cultures.
+                            </li>
+                            <li>
+                                To ignite children’s intellectual capacities in all areas, allowing them to make the most of their preschool years.
 
-                </li>
-                <li>
-                    To ignite children’s intellectual capacities in all areas, allowing them to make the most of their preschool years. 
+                            </li>
+                            <li>
+                                To create an educational foundation that will get them ready for the rest of their academic career.
 
-                </li>
-                <li>
-                   To create an educational foundation that will get them ready for the rest of their academic career. 
-
-                </li>            <li>
-                 To help build caring and trusting relationships, thereby creating a strong emotional and social base.
+                            </li>
+                            <li>
+                                To help build caring and trusting relationships, thereby creating a strong emotional and social base.
 
 
-                </li>
-            </ul>
-        </div>
-        <div class="nursery sec-style lst-bullet" ng-if="tab == 4">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nursery sec-style lst-bullet" ng-if="tab == 4">
 
-            <h2 class="text-uppercase font-dkcat text-center">We Believe</h2>
-            <ul>
-                <li>Children are confident, capable, curious and unique thinkers.
-</li>
-                <li>They have active minds and continuously explore new ideas to derive meaning from their playful experiences.
+                        <h2 class="text-uppercase font-dkcat text-center">We Believe</h2>
+                        <ul>
+                            <li>Children are confident, capable, curious and unique thinkers.
+                            </li>
+                            <li>They have active minds and continuously explore new ideas to derive meaning from their playful experiences.
 
-                </li>
-                <li>They are active and involved participants in the learning process.
-</li>
-                <li>They learn best in an open, co-operative, play-based environment. 
+                            </li>
+                            <li>They are active and involved participants in the learning process.
+                            </li>
+                            <li>They learn best in an open, co-operative, play-based environment.
 
-                </li>
-            </ul>
-            <p>
-                Our beliefs will be reflected in our outlook, communication, behaviour and environment. 
-There are two gifts we owe our children:  roots to grow and wings to fly.
-            </p>
-        </div>
-        </p>
-        <div class="ourmission-bir3" ng-if="tab == 3">
-            <img src="img/ourstory/ourmission.png" alt="" class="img-responsive">
-        </div>
-        <div class="book-bird" ng-if="tab == 1">
-            <img src="img/ourstory/bird1.png" alt="" class="img-responsive">
-        </div>
-        <div class="ourstory-bir2" ng-if="tab == 2">
-            <img src="img/ourstory/ourvision-bird.png" alt="" class="img-responsive">
-        </div>
-    </div>
-</div>
-        <!-- </div> -->
+                            </li>
+                        </ul>
+                        <p>
+                            Our beliefs will be reflected in our outlook, communication, behaviour and environment. There are two gifts we owe our children: roots to grow and wings to fly.
+                        </p>
+                    </div>
+                    </p>
+                    <div class="ourmission-bir3" ng-if="tab == 3">
+                        <img src="img/ourstory/ourmission.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="book-bird" ng-if="tab == 1">
+                        <img src="img/ourstory/bird1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="ourstory-bir2" ng-if="tab == 2">
+                        <img src="img/ourstory/ourvision-bird.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
             <!-- </div> -->
-        <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
     </div>
     <div class="lake" ng-if="tab == 1">
         <img src="img/ourstory/lake.png" alt="" class="img-responsive">

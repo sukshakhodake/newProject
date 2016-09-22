@@ -2,7 +2,7 @@
 //$headers = "CC: abc@mail.com";
 header('Content-Type: application/json');
 //$to = "mansi87@gmail.com";
-$to = "sohan@wohlig.com";
+$to = "mansi87@gmail.com,kaivalyas@gmail.com";
 $name = $_GET['name'];
 $email = $_GET['email'];
 $mobile = $_GET['mobile'];
