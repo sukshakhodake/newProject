@@ -2,7 +2,7 @@
 //$headers = "CC: abc@mail.com";
 header('Content-Type: application/json');
 //$to = "mansi87@gmail.com";
-$to = "mansi87@gmail.com,kaivalyas@gmail.com";
+$to = "mansi87@gmail.com,kaivalyas@gmail.com,mulundpreschool@gmail.com,info@weaverspreschool.com";
 $name = $_GET['name'];
 $email = $_GET['email'];
 $mobile = $_GET['mobile'];
@@ -31,3 +31,4 @@ $check = mail($to,$subject,$txt,$headers);
 		echo json_encode($arr);
 	}
 ?>
+

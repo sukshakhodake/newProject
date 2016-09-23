@@ -1899,6 +1899,14 @@ footer {
     }
 }
 
+.scroll-sec {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 72px;
+    @include transform(translateX(-50%));
+}
+
 // .form-in { @include transform(translateX(0px)); }
 //bootstrap forms
 
