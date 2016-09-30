@@ -74,9 +74,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         }, 1000);
     });
-           if (typeof $.fn.fullpage.destroy == 'function') {
-            $.fn.fullpage.destroy('all');
-        }
+    if (typeof $.fn.fullpage.destroy == 'function') {
+        $.fn.fullpage.destroy('all');
+    }
 })
 
 .controller('OurApproachCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -118,7 +118,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.tab = 1;
-           if (typeof $.fn.fullpage.destroy == 'function') {
+        if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
 
@@ -129,7 +129,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Our Teachers");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-           if (typeof $.fn.fullpage.destroy == 'function') {
+        if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
     })
@@ -139,95 +139,93 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Gallery");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-           if (typeof $.fn.fullpage.destroy == 'function') {
+        if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
     })
-    .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal) {
+    .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("contactus");
         $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-   if (typeof $.fn.fullpage.destroy == 'function') {
+        if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
-            initMap = function() {
-                var myLatLng = {
-                    lat: 19.183042,
-                    lng: 72.949746
-                };
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 17,
-                    center: myLatLng,
-                    disableDefaultUI: true,
-                    scrollwheel: false
-                });
-                var contentString = '<div id="content">' +
-                    '<div id="siteNotice">' +
-                    '</div>' +
-                    '<h1 id="firstHeading" class="firstHeading">Weavers Pre-school</h1>' +
-                    '<div id="bodyContent">' +
-                    '<p><b>WEAVERS</b>,</p>' +
-                    '</div>' +
-                    '</div>';
-
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-
-                function toggleBounce() {
-                    if (marker.getAnimation() !== null) {
-                        marker.setAnimation(null);
-                    } else {
-                        marker.setAnimation(google.maps.Animation.BOUNCE);
-                    }
-                }
-                var image = 'img/contact/mapmarker.png';
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    icon: image,
-                    title: 'Weavers',
-                    animation: google.maps.Animation.DROP,
-                    optimized: false
-                });
-                marker.addListener('click', function() {
-                    infowindow.open(map, marker);
-                });
-                // var marker = new google.maps.Marker({
-                //   position: myLatLng,
-                //   map: map,
-                // });
+        initMap = function() {
+            var myLatLng = {
+                lat: 19.183042,
+                lng: 72.949746
             };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: myLatLng,
+                disableDefaultUI: true,
+                scrollwheel: false
+            });
+            var contentString = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading">Weavers Pre-school</h1>' +
+                '<div id="bodyContent">' +
+                '<p><b>WEAVERS</b>,</p>' +
+                '</div>' +
+                '</div>';
 
-            setTimeout(function() {
-              initMap();
-            },100);
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
 
-            $scope.formData = {};
-            $scope.flags = {};
-            $scope.submitForm = function() {
-            $scope.flags.thankyou = false;
+            function toggleBounce() {
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+            var image = 'img/contact/mapmarker.png';
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                icon: image,
+                title: 'Weavers',
+                animation: google.maps.Animation.DROP,
+                optimized: false
+            });
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+            // var marker = new google.maps.Marker({
+            //   position: myLatLng,
+            //   map: map,
+            // });
+        };
+
+        setTimeout(function() {
+            initMap();
+        }, 100);
+
+        $scope.formData = {};
+        $scope.flags = {};
+        $scope.submitForm = function() {
+            //$scope.flags.thankyou = false;
             //console.log("ffff", $scope.formData);
             $scope.formData.subject = "Contact Us form details";
             NavigationService.submitForm($scope.formData, function(res) {
                 if (res.value) {
-                 $scope.thankyou = function() {
-    $uibModal.open({
-      animation: true,
-      templateUrl: "views/modal/thankyou.html",
-      scope: $scope,
-      windowClass: "width80"
-    });
-  };
-                $scope.formData = {};
+                        $uibModal.open({
+                            animation: true,
+                            templateUrl: "views/modal/thankyou.html",
+                            scope: $scope,
+                            windowClass: "width80"
+                        });
+                    $scope.formData = {};
                 } else {
 
                 }
             });
-            };
+        };
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -235,12 +233,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Art Attack");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-           if (typeof $.fn.fullpage.destroy == 'function') {
+        if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
     })
 
-.controller('headerctrl', function($scope, TemplateService) {
+.controller('headerctrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
@@ -251,37 +249,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //     $scope.isopen = !$scope.isopen;
     // };
     $scope.formClass = "form-in";
-    $scope.formSlide = function(){
-      if($scope.formClass == "form-in"){
-        $scope.formClass = "form-out";
-      }else {
-        $scope.formClass = "form-in";
-      }
+    $scope.formSlide = function() {
+        if ($scope.formClass == "form-in") {
+            $scope.formClass = "form-out";
+        } else {
+            $scope.formClass = "form-in";
+        }
     }
 
     $scope.formData = {};
-    $scope.flags = {};
-    $scope.submitForm = function() {
-            // $scope.flags.thankyou = false;
+        $scope.flags = {};
+        $scope.submitForm = function() {
+            //$scope.flags.thankyou = false;
+            //console.log("ffff", $scope.formData);
             $scope.formData.subject = "Contact Us form details";
-            console.log("ffff", $scope.formData);
             NavigationService.submitForm($scope.formData, function(res) {
                 if (res.value) {
-                // $scope.flags.thankyou = true;
-                          $scope.thankyou = function() {
-    $uibModal.open({
-      animation: true,
-      templateUrl: "views/modal/thankyou.html",
-      scope: $scope,
-      windowClass: "width80"
-    });
-  };
-                $scope.formData = {};
+                        $uibModal.open({
+                            animation: true,
+                            templateUrl: "views/modal/thankyou.html",
+                            scope: $scope,
+                            windowClass: "width80"
+                        });
+                    $scope.formData = {};
                 } else {
 
                 }
             });
-            };
+        };
 })
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
