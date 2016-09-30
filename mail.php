@@ -14,7 +14,7 @@ $txt = "Dear Admin,"."\r\n\n".
        "Email: ".$email."\r\n\n".
        "Mobile no: ".$mobile."\r\n\n".
        "Message: ".$msg."\r\n\n";
-$check = mail($to,$subject,$txt,$headers);
+$check = mail($to,$subject,$txt);
 
 	if($check)
 	{

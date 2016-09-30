@@ -257,7 +257,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
     }
 
-    $scope.formData = {};
+        $scope.formData = {};
         $scope.flags = {};
         $scope.submitForm = function() {
             //$scope.flags.thankyou = false;
