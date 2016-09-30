@@ -1,13 +1,14 @@
 <?php
 //$headers = "CC: abc@mail.com";
 header('Content-Type: application/json');
-header('Access-Control-Allow-Headers: Content-Type');
 $to  = "parmarpriyank94@gmail.com";
+//$to = "mansi87@gmail.com";
+// $to = "mansi87@gmail.com,kaivalyas@gmail.com,mulundpreschool@gmail.com,info@weaverspreschool.com";
 $name = $_GET['name'];
 $email = $_GET['email'];
 $mobile = $_GET['mobile'];
 $msg = $_GET['message'];
-$subject = $_GET['subject'];
+$subject = "Coming Soon Form";
 $txt = "Dear Admin,"."\r\n\n".
        "Please check the following details : "."\r\n\n".
        "Name: ".$name."\r\n\n".

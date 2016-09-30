@@ -78,7 +78,7 @@ var navigationservice = angular.module('navigationservice', [])
     },
       submitForm: function(mydata, callback) {
     $http({
-      url: 'http://weaverspreschool.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&mobile='+mydata.mobile+'&comment='+mydata.comment+'&subject='+mydata.subject,
+      url: 'http://weaverspreschool.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&mobile='+mydata.mobile+'&message='+mydata.message+'&subject='+mydata.subject,
       method: 'GET',
       withCredentials: true,
       data: mydata

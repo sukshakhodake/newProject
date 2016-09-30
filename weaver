@@ -1,0 +1,3 @@
+tingdumb/weaver
+
+url: 'http://weaverspreschool.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&mobile='+mydata.mobile+'&comment='+mydata.comment+'&subject='+mydata.subject,
