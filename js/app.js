@@ -129,3 +129,45 @@ firstapp.config(function ($translateProvider) {
   $translateProvider.translations('hi', LanguageHindi);
   $translateProvider.preferredLanguage('en');
 });
+
+firstapp.filter('serverimage', function() {
+  return function(image) {
+    if (image && image !== null) {
+
+      return adminurl + "upload/readFile?file=" + image;
+    } else {
+      return undefined;
+    }
+  }
+});
+
+firstapp.directive('onlyDigits', function() {
+    return {
+        require: 'ngModel',
+        restrict: 'A',
+        link: function(scope, element, attr, ctrl) {
+            var digits;
+
+            function inputValue(val) {
+                if (val) {
+                    if (attr.type == "tel") {
+                        digits = val.replace(/[^0-9\+\\]/g, '');
+                    } else {
+                        digits = val.replace(/[^0-9\-\\]/g, '');
+                    }
+
+
+                    if (digits !== val) {
+                        ctrl.$setViewValue(digits);
+                        ctrl.$render();
+                    }
+                    console.log(digits);
+                    console.log(parseInt(digits,10));
+                    return parseInt(digits, 10);
+                }
+                return undefined;
+            }
+            ctrl.$parsers.push(inputValue);
+        }
+    };
+})

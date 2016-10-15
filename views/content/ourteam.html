@@ -5,15 +5,13 @@
             <div class="row">
                 <div class="col-md-7 col-md-offset-3">
                     <div class="our-team-content1">
-                        <h3 class="text-uppercase font-dkcat text-left sub-head">Mansi Shah</h3>
-                        <span class="post font-gothamrounded font-medium">Founder</span>
-                        <p class="text-justify font-hind-regular font-regular">
-                           Mansi earned her bachelor’s degree in economics from the University of California, San Diego, followed by a Master’s in Economics from the University of Manchester. After working with various renowned companies like Johnson & Johnson and Alliance World, she found her real calling - teaching.  She taught at Tridha, a Waldorf school, which inspired her to start her own venture – The Weavers Preschool. 
-                        </p>
+                        <h3 class="text-uppercase font-dkcat text-left sub-head">{{ourTeam[0].name}}</h3>
+                        <span class="post font-gothamrounded font-medium">{{ourTeam[0].designation}}</span>
+                        <p class="text-justify font-hind-regular font-regular" ng-bind-html="ourTeam[0].content"> </p>
                     </div>
                 </div>
             </div>
-                    <div class="bird1-team">
+            <div class="bird1-team">
             <img src="img/ourteam/bird1.png" alt="" class="img-responsive">
         </div>
         </div>
@@ -24,12 +22,9 @@
             <div class="row">
                 <div class="col-md-7 col-md-offset-1">
                     <div class="our-team-content2 mgt150">
-                        <h3 class="text-uppercase font-dkcat text-left sub-head">Kaivalya Shah</h3>
-                        <span class="post font-gothamrounded font-medium">Co-founder</span>
-                        <p class="text-justify font-hind-regular font-regular">
-                           Kaivalya received his bachelor’s degree in Structural Engineering from the University of California, San Diego. He is currently a director at Marathon Realty, a prominent real estate firm. Kaivalya, along with his partner Mansi, endeavours to create an international standard preschool that imparts knowledge that goes beyond textbooks and learning that goes beyond the classroom. 
-
-                        </p>
+                        <h3 class="text-uppercase font-dkcat text-left sub-head">{{ourTeam[1].name}}</h3>
+                        <span class="post font-gothamrounded font-medium">{{ourTeam[1].designation}}</span>
+                        <p class="text-justify font-hind-regular font-regular" ng-bind-html="ourTeam[1].content"></p>
                         <div class="bird3-team">
                             <img src="img/ourteam/bird3.png" alt="" class="img-responsive">
                         </div>
@@ -49,11 +44,9 @@
             <div class="row">
                 <div class="col-md-7 col-md-offset-3">
                     <div class="our-team-content5 mgt150">
-                        <h3 class="text-uppercase font-dkcat text-left sub-head">Purnima Shetye</h3>
-                        <span class="post font-gothamrounded font-medium">Mentor</span>
-                        <p class="text-justify font-hind-regular font-regular">
-                            Taking on the role of academic mentor, Purnima has more than 36 years of experience in the field of education. She earned her Bachelor of Arts and Bachelor of Education degrees from the University of Poona. Her vast teaching experience in Nasik, PCMC and Pune has helped her set up national and international preschools as well as child care and activity centres like Vivero International, The Learning Curve Preschool and a CBSE grade-level school.
-                        </p>
+                        <h3 class="text-uppercase font-dkcat text-left sub-head">{{ourTeam[2].name}}</h3>
+                        <span class="post font-gothamrounded font-medium">{{ourTeam[2].designation}}</span>
+                        <p class="text-justify font-hind-regular font-regular" ng-bind-html="ourTeam[2].name"></p>
                     </div>
                 </div>
             </div>

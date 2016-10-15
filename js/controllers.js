@@ -89,6 +89,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $.fn.fullpage.destroy('all');
         }
         $scope.tab = 1;
+
+        NavigationService.getOurApproach(function(data){
+          console.log(data);
+          $scope.OurApproach = data.data.results;
+           console.log($scope.OurApproach);
+        });
     })
     .controller('AboutUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -100,6 +106,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $.fn.fullpage.destroy('all');
         }
         $scope.tab = 1;
+
+        NavigationService.getAboutUs(function(data){
+          console.log(data);
+          $scope.AboutUs = data.data.results;
+           console.log($scope.AboutUs);
+        });
+
+
     })
     .controller('OurTeamCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -110,6 +124,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
+
+        NavigationService.getOurTeam(function(data){
+          console.log(data);
+          $scope.ourTeam = data.data.results;
+           console.log($scope.ourTeam);
+        });
     })
     .controller('OurProgrammesCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -121,6 +141,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
+
+        NavigationService.getOurProgrammes(function(data){
+          console.log(data);
+          $scope.OurProgrammes = data.data.results;
+           console.log($scope.OurProgrammes);
+        });
 
     })
     .controller('OurTeachersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -225,6 +251,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
                 }
             });
+
+            NavigationService.submitContact($scope.formData, function(res) {
+                if (res.value) {
+                        $uibModal.open({
+                            animation: true,
+                            templateUrl: "views/modal/thankyou.html",
+                            scope: $scope,
+                            windowClass: "width80"
+                        });
+                    $scope.formData = {};
+                } else {
+
+                }
+            });
         };
     })
     .controller('ArtAttackCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -264,6 +304,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             //console.log("ffff", $scope.formData);
             $scope.formData.subject = "Contact Us form details";
             NavigationService.submitForm($scope.formData, function(res) {
+                if (res.value) {
+                        $uibModal.open({
+                            animation: true,
+                            templateUrl: "views/modal/thankyou.html",
+                            scope: $scope,
+                            windowClass: "width80"
+                        });
+                    $scope.formData = {};
+                } else {
+
+                }
+            });
+
+            NavigationService.submitContact($scope.formData, function(res) {
+              console.log('$scope.formData');
                 if (res.value) {
                         $uibModal.open({
                             animation: true,

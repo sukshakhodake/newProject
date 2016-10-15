@@ -1,4 +1,4 @@
-var adminURL = "";
+var adminurl = "http://localhost:1337/";
 if(isproduction)
 {
   adminURL =  "http://www.wohlig.co.in/demo/index.php";
@@ -83,7 +83,44 @@ var navigationservice = angular.module('navigationservice', [])
       withCredentials: true,
       data: mydata
     }).success(callback);
-  }
+  },
+  submitContact: function(mydata, callback) {
+    $http({
+      url: adminurl + 'Contact/save',
+      method: 'POST',
+      withCredentials: true,
+      data: mydata
+    }).success(callback);
+},
+  getAboutUs: function(callback) {
+      $http({
+        url: adminurl + 'AboutUs/search',
+        method: 'POST',
+        withCredentials: true
+      }).success(callback);
+    },
+    getOurTeam: function(callback) {
+        $http({
+          url: adminurl + 'Team/search',
+          method: 'POST',
+          withCredentials: true
+        }).success(callback);
+      },
+      getOurProgrammes:function(callback) {
+          $http({
+            url: adminurl + 'Program/search',
+            method: 'POST',
+            withCredentials: true
+          }).success(callback);
+        },
+        getOurApproach:function(callback) {
+            $http({
+              url: adminurl + 'Approach/search',
+              method: 'POST',
+              withCredentials: true
+            }).success(callback);
+          },
+
 
   };
 });
