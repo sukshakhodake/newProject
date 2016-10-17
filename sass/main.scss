@@ -1597,7 +1597,7 @@ li {
 
 //gallerycomingsoon
 .gallery-page {
-    background-image: url('../img/gallery/gallerybackground.png');
+    background-image: url('../img/gallery/art-attack.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1621,6 +1621,37 @@ li {
         img {
             width: 130px;
         }
+    }
+    .flexslider {
+        .flex-control-nav {
+            display: none;
+        }
+    }
+    .flexslider:hover .flex-direction-nav {
+        .flex-next,
+        .flex-prev {
+            opacity: 1;
+        }
+    }
+    .flexslider {
+        li {
+            .flex-next,
+            .flex-prev {
+                opacity: 1;
+            }
+        }
+    }
+    .flex-direction-nav .flex-next {
+        right: -50px;
+        text-align: right;
+    }
+    .flexslider:hover .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: -42px;
+    }
+    .flexslider:hover .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: -50px;
     }
 }
 
