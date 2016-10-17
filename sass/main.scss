@@ -479,7 +479,7 @@ textarea {
     h3 {
         color: #fffdf9;
         font-size: 50px;
-        margin: 0 -22px 28px;
+        margin: 0 60px 5px;
     }
 }
 
@@ -1623,6 +1623,7 @@ li {
         }
     }
     .flexslider {
+        margin: 0;
         .flex-control-nav {
             display: none;
         }
@@ -1644,14 +1645,43 @@ li {
     .flex-direction-nav .flex-next {
         right: -50px;
         text-align: right;
+        opacity: 1;
     }
     .flexslider:hover .flex-direction-nav .flex-next {
         opacity: 1;
-        right: -42px;
+        right: -50px;
     }
     .flexslider:hover .flex-direction-nav .flex-prev {
         opacity: 1;
         left: -50px;
+    }
+    .flex-direction-nav .flex-next,
+    .flex-prev {
+        padding: 10px 12px;
+    }
+    .gallery-bird {
+        position: relative;
+        img {
+            position: absolute;
+            bottom: -140px;
+            right: 0;
+            width: 750px;
+        }
+    }
+    .coming-soon {
+        position: relative;
+        .butterflie {
+            position: absolute;
+            top: -69px;
+            left: 125px;
+            z-index: 99;
+        }
+        .blackflie {
+            position: absolute;
+            top: -69px;
+            right: 125px;
+            z-index: 99;
+        }
     }
 }
 
