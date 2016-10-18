@@ -1628,60 +1628,72 @@ li {
             display: none;
         }
     }
-    .flexslider:hover .flex-direction-nav {
-        .flex-next,
-        .flex-prev {
-            opacity: 1;
-        }
-    }
     .flexslider {
         li {
+            .img-border {
+                margin: 0;
+            }
+        }
+        .flex-direction-nav {
             .flex-next,
             .flex-prev {
                 opacity: 1;
             }
         }
     }
-    .flex-direction-nav .flex-next {
-        right: -50px;
-        text-align: right;
-        opacity: 1;
-    }
-    .flexslider:hover .flex-direction-nav .flex-next {
-        opacity: 1;
-        right: -50px;
-    }
-    .flexslider:hover .flex-direction-nav .flex-prev {
-        opacity: 1;
-        left: -50px;
-    }
-    .flex-direction-nav .flex-next,
+}
+
+.flexslider:hover .flex-direction-nav {
+    .flex-next,
     .flex-prev {
-        padding: 10px 12px;
+        opacity: 1;
     }
-    .gallery-bird {
-        position: relative;
-        img {
-            position: absolute;
-            bottom: -140px;
-            right: 0;
-            width: 750px;
-        }
+}
+
+.flex-direction-nav .flex-next {
+    right: -50px;
+    text-align: right;
+    opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: -50px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: -50px;
+}
+
+.flex-direction-nav .flex-next,
+.flex-prev {
+    padding: 10px 12px;
+}
+
+.gallery-bird {
+    position: relative;
+    img {
+        position: absolute;
+        bottom: -140px;
+        right: 0;
+        width: 750px;
     }
-    .coming-soon {
-        position: relative;
-        .butterflie {
-            position: absolute;
-            top: -69px;
-            left: 125px;
-            z-index: 99;
-        }
-        .blackflie {
-            position: absolute;
-            top: -69px;
-            right: 125px;
-            z-index: 99;
-        }
+}
+
+.coming-soon {
+    position: relative;
+    .butterflie {
+        position: absolute;
+        top: -22px;
+        left: 160px;
+        z-index: 99;
+    }
+    .blackflie {
+        position: absolute;
+        top: -69px;
+        right: 125px;
+        z-index: 99;
     }
 }
 
