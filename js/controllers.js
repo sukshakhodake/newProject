@@ -212,6 +212,49 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (typeof $.fn.fullpage.destroy == 'function') {
             $.fn.fullpage.destroy('all');
         }
+
+        $scope.galleryImage = [{
+            image: "img/gallery/slide-1.png",
+
+        }, {
+            image: "img/gallery/slide-2.png",
+
+        }, {
+            image: "img/gallery/slide-3.png",
+
+        }, {
+            image: "img/gallery/slide-4.png",
+
+        }, {
+            image: "img/gallery/slide-5.png",
+
+        }, {
+            image: "img/gallery/slide-6.png",
+
+        }, {
+            image: "img/gallery/slide-1.png",
+
+        }, {
+            image: "img/gallery/slide-2.png",
+
+        }, {
+            image: "img/gallery/slide-3.png",
+
+        }, {
+            image: "img/gallery/slide-4.png",
+
+        }, {
+            image: "img/gallery/slide-5.png",
+
+        }, {
+            image: "img/gallery/slide-6.png",
+
+        }];
+
+        $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+        for (var i = 0; i < $scope.galleryImage.length; i++) {
+            $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+        };
     })
     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         //Used to name the .html file

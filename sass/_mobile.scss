@@ -5,6 +5,21 @@
 }
 
 @media (max-width: 1200px) {
+    //gallery
+    // .butterflie {
+    //     top: 333px;
+    //     left: 0;
+    //     img {
+    //         width: 68%;
+    //     }
+    // }
+    .butterflie {
+        top: 175px;
+        left: 36px;
+        img {
+            width: 68%;
+        }
+    }
     .option-desc2 {
         height: auto;
     }
@@ -116,6 +131,14 @@
 }
 
 @media (max-width: $screen-sm-max) {
+    //gallery
+    .butterflie {
+        top: 333px;
+        left: 0;
+        img {
+            width: 68%;
+        }
+    }
     .bird1-team img {
         width: 400px;
     }
@@ -464,6 +487,27 @@
 }
 
 @media (max-width: 480px) {
+    .butterflie {
+        top: 287px;
+        left: 2px;
+        img {
+            width: 20%;
+        }
+    }
+    .flex-direction-nav .flex-next {
+        right: -38px;
+        opacity: 1;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -44px;
+        opacity: 1;
+    }
+    .gallery h3 {
+        font-size: 27px;
+    }
+    .flex-direction-nav a {
+        margin: -20px 8px 0 3px;
+    }
     .story1 {
         font-size: 15px;
         line-height: 120%;
@@ -676,7 +720,25 @@
     }
 }
 
+@media (max-width: 375px) {
+    .butterflie {
+        top: 261px;
+        left: 2px;
+    }
+}
+
 @media (max-width: 360px) {
+    //gallery
+    .butterflie {
+        top: 215px;
+        left: 2px;
+    }
+    // .gallery h3 {
+    //     font-size: 27px;
+    // }
+    // .flex-direction-nav a {
+    //     margin: -20px 8px 0 3px;
+    // }
     .main-slide {
         display: none;
     }
