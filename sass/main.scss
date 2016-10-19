@@ -1602,6 +1602,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
     p {
         color: #fffdf9;
         font-weight: 500;
@@ -1624,6 +1625,7 @@ li {
     }
     .flexslider {
         margin: 0;
+        border: none;
         .flex-control-nav {
             display: none;
         }
@@ -1638,22 +1640,25 @@ li {
             .flex-next,
             .flex-prev {
                 opacity: 1;
+                &:focus {
+                    outline: 0;
+                }
             }
+        }
+        .col {
+            padding: 0;
         }
     }
 }
 
-.flexslider:hover .flex-direction-nav {
-    .flex-next,
-    .flex-prev {
+.flex-direction-nav {
+    .flex-next {
+        right: -50px;
         opacity: 1;
     }
-}
-
-.flex-direction-nav .flex-next {
-    right: -50px;
-    text-align: right;
-    opacity: 1;
+    .flex-prev {
+        left: -62px;
+    }
 }
 
 .flexslider:hover .flex-direction-nav .flex-next {
@@ -1663,7 +1668,11 @@ li {
 
 .flexslider:hover .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: -50px;
+    left: -62px;
+}
+
+.media-image {
+    margin: 5px;
 }
 
 .flex-direction-nav .flex-next,
@@ -1671,30 +1680,32 @@ li {
     padding: 10px 12px;
 }
 
+.flex-direction-nav .flex-disabled {
+    opacity: 1 !important;
+}
+
 .gallery-bird {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 72%;
     img {
-        position: absolute;
-        bottom: -140px;
-        right: 0;
-        width: 750px;
+        width: 100%;
     }
 }
 
-.coming-soon {
-    position: relative;
-    .butterflie {
-        position: absolute;
-        top: -22px;
-        left: 160px;
-        z-index: 99;
-    }
-    .blackflie {
-        position: absolute;
-        top: -69px;
-        right: 125px;
-        z-index: 99;
-    }
+.butterflie {
+    position: absolute;
+    top: 295px;
+    left: 401px;
+    z-index: 99;
+}
+
+.blackflie {
+    position: absolute;
+    top: 142px;
+    right: 175px;
+    z-index: 99;
 }
 
 .coming-sec {
