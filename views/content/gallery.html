@@ -34,7 +34,7 @@
                     </div>
                     <h3 class="text-uppercase font-dkcat text-left display-inline">Art Attack</h3>
                     <flex-slider flex-slide="slide in galleryImage track by $index" animation="slide" animation-loop="false" slideshow="false"
-                        prev-text="" next-text="" minItems="2">
+                        prev-text="" next-text="" class="hidden-xs">
                         <li>
                             <div class="row img-border" ng-repeat="row in slide track by $index">
 
@@ -50,7 +50,21 @@
                             </div>
                         </li>
                     </flex-slider>
-
+                    <flex-slider flex-slide="slide in galleryXs track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                        next-text="" class="visible-xs">
+                        <li>
+                            <div class="row img-border" ng-repeat="row in slide track by $index">
+                                <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
+                                    <a fancybox-box href="{{wall.image}}" rel="cop">
+                                        <div class="media-image">
+                                            <img ng-src="{{wall.image}}" alt="" class="">
+                                            <!--<i class="fa {{wall.icon}}"></i>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </flex-slider>
                 </div>
                 <!--<div class="pos-set2">
                     <img src="img/gallery/coming-soon.png" alt="" class="img-responsive">

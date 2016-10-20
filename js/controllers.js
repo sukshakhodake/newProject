@@ -53,6 +53,50 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     for (var i = 0; i < $scope.galleryImage.length; i++) {
         $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
     };
+    //    $scope.galleryImageMobile = _.chunk($scope.galleryImage, 2);
+    $scope.galleryXs = [{
+        image: "img/gallery/slide-1.png",
+
+    }, {
+        image: "img/gallery/slide-2.png",
+
+    }, {
+        image: "img/gallery/slide-3.png",
+
+    }, {
+        image: "img/gallery/slide-4.png",
+
+    }, {
+        image: "img/gallery/slide-5.png",
+
+    }, {
+        image: "img/gallery/slide-6.png",
+
+    }, {
+        image: "img/gallery/slide-1.png",
+
+    }, {
+        image: "img/gallery/slide-2.png",
+
+    }, {
+        image: "img/gallery/slide-3.png",
+
+    }, {
+        image: "img/gallery/slide-4.png",
+
+    }, {
+        image: "img/gallery/slide-5.png",
+
+    }, {
+        image: "img/gallery/slide-6.png",
+
+    }];
+
+    $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+    for (var i = 0; i < $scope.galleryXs.length; i++) {
+        $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+    };
+
 
     $scope.gallery = [{
         image: "img/sec5/lunchfun.png",
@@ -254,6 +298,48 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.galleryImage = _.chunk($scope.galleryImage, 6);
         for (var i = 0; i < $scope.galleryImage.length; i++) {
             $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+        };
+        $scope.galleryXs = [{
+            image: "img/gallery/slide-1.png",
+
+        }, {
+            image: "img/gallery/slide-2.png",
+
+        }, {
+            image: "img/gallery/slide-3.png",
+
+        }, {
+            image: "img/gallery/slide-4.png",
+
+        }, {
+            image: "img/gallery/slide-5.png",
+
+        }, {
+            image: "img/gallery/slide-6.png",
+
+        }, {
+            image: "img/gallery/slide-1.png",
+
+        }, {
+            image: "img/gallery/slide-2.png",
+
+        }, {
+            image: "img/gallery/slide-3.png",
+
+        }, {
+            image: "img/gallery/slide-4.png",
+
+        }, {
+            image: "img/gallery/slide-5.png",
+
+        }, {
+            image: "img/gallery/slide-6.png",
+
+        }];
+
+        $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+        for (var i = 0; i < $scope.galleryXs.length; i++) {
+            $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
         };
     })
     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
