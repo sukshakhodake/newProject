@@ -1671,6 +1671,11 @@ li {
     left: -62px;
 }
 
+.flex-direction-nav a:before {
+    color: #fff;
+    text-shadow: none;
+}
+
 .media-image {
     margin: 5px;
 }
@@ -1696,8 +1701,8 @@ li {
 
 .butterflie {
     position: absolute;
-    top: 176px;
-    left: 226px;
+    top: -20%;
+    left: -11%;
     z-index: 99;
 }
 

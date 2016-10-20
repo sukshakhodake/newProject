@@ -14,8 +14,8 @@
     //     }
     // }
     .butterflie {
-        top: 175px;
-        left: 36px;
+        top: -12%;
+        left: -11%;
         img {
             width: 68%;
         }
@@ -133,8 +133,8 @@
 @media (max-width: $screen-sm-max) {
     //gallery
     .butterflie {
-        top: 333px;
-        left: 0;
+        top: -15%;
+        left: -14%;
         img {
             width: 68%;
         }
@@ -267,6 +267,16 @@
 }
 
 @media (max-width: $screen-xs-max) {
+    .butterflie {
+        top: 11%;
+        left: -2%;
+        img {
+            width: 20%;
+        }
+    }
+    .flex-direction-nav a {
+        margin: -20px 22px 0;
+    }
     .navbar-default .navbar-toggle {
         position: absolute;
         right: 20px;
@@ -488,11 +498,8 @@
 
 @media (max-width: 480px) {
     .butterflie {
-        top: 287px;
-        left: 2px;
-        img {
-            width: 20%;
-        }
+        top: 5%;
+        left: -3%;
     }
     .flex-direction-nav .flex-next {
         right: -38px;
@@ -720,18 +727,25 @@
     }
 }
 
-@media (max-width: 375px) {
-    .butterflie {
-        top: 261px;
-        left: 2px;
-    }
-}
-
+// @media (max-width: 375px) {
+//     .butterflie {
+//         top: 261px;
+//         left: 2px;
+//     }
+// }
 @media (max-width: 360px) {
     //gallery
     .butterflie {
-        top: 215px;
-        left: 2px;
+        top: 5%;
+        left: -3%;
+    }
+    .flexslider:hover .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: -38px;
+    }
+    .flexslider:hover .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: -44px;
     }
     // .gallery h3 {
     //     font-size: 27px;
