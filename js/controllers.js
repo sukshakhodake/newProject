@@ -469,6 +469,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                     scope: $scope,
                     windowClass: "width80"
                 });
+                $scope.formClass = "form-in";
                 $scope.formData = {};
             } else {
               console.log("Error while submiting form  mail");
