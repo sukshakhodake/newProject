@@ -1,11 +1,4 @@
-var adminurl = "http://localhost:1337/";
-if(isproduction)
-{
-  adminURL =  "http://www.wohlig.co.in/demo/index.php";
-}
-else {
-  adminURL = "http://localhost/demo/index.php";
-}
+var adminurl = "http://104.155.129.33:91/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -76,17 +69,18 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return menuname;
     },
-      submitForm: function(mydata, callback) {
-    $http({
-      url: 'http://weaverspreschool.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&mobile='+mydata.mobile+'&message='+mydata.message+'&subject='+mydata.subject,
-      method: 'GET',
-      withCredentials: true,
-      data: mydata
-    }).success(callback);
-  },
+  //   submitForm: function(mydata, callback) {
+  //   $http({
+  //     url: 'http://www.weaverspreschool.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&mobile='+mydata.mobile+'&message='+mydata.message+'&subject='+mydata.subject,
+  //     method: 'GET',
+  //     withCredentials: true,
+  //     data: mydata
+  //   }).success(callback);
+  // },
   submitContact: function(mydata, callback) {
+    console.log(mydata);
     $http({
-      url: adminurl + 'Contact/save',
+      url: adminurl + 'Contact/saveContact',
       method: 'POST',
       withCredentials: true,
       data: mydata

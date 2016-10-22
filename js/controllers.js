@@ -249,7 +249,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     })
     .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("gallery");
+        $scope.template = TemplateService.changecontent("gallery-old");
         $scope.menutitle = NavigationService.makeactive("Gallery");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
@@ -409,22 +409,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.flags = {};
         $scope.submitForm = function () {
             //$scope.flags.thankyou = false;
-            //console.log("ffff", $scope.formData);
-            $scope.formData.subject = "Contact Us form details";
-            NavigationService.submitForm($scope.formData, function (res) {
-                if (res.value) {
-                    $uibModal.open({
-                        animation: true,
-                        templateUrl: "views/modal/thankyou.html",
-                        scope: $scope,
-                        windowClass: "width80"
-                    });
-                    $scope.formData = {};
-                } else {
-
-                }
-            });
-
+            console.log("form data", $scope.formData);
             NavigationService.submitContact($scope.formData, function (res) {
                 if (res.value) {
                     $uibModal.open({
@@ -435,9 +420,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                     });
                     $scope.formData = {};
                 } else {
-
+                  console.log("Error while submiting form  mail");
                 }
             });
+
         };
     })
     .controller('ArtAttackCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
@@ -474,24 +460,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.flags = {};
     $scope.submitForm = function () {
         //$scope.flags.thankyou = false;
-        //console.log("ffff", $scope.formData);
-        $scope.formData.subject = "Contact Us form details";
-        NavigationService.submitForm($scope.formData, function (res) {
-            if (res.value) {
-                $uibModal.open({
-                    animation: true,
-                    templateUrl: "views/modal/thankyou.html",
-                    scope: $scope,
-                    windowClass: "width80"
-                });
-                $scope.formData = {};
-            } else {
-
-            }
-        });
-
+        console.log("form data", $scope.formData);
         NavigationService.submitContact($scope.formData, function (res) {
-            console.log('$scope.formData');
             if (res.value) {
                 $uibModal.open({
                     animation: true,
@@ -501,7 +471,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 });
                 $scope.formData = {};
             } else {
-
+              console.log("Error while submiting form  mail");
             }
         });
     };
