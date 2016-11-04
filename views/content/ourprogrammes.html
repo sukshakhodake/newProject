@@ -25,10 +25,10 @@
             <!-- <div class="row"> -->
             <!-- <div class="col-md-3"> -->
             <div class="option-sec font-dkcat">
-                <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">{{OurProgrammes[0].name}}</button>
-                <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">{{OurProgrammes[1].name}}</button>
-                <button type="button" class="btn btn-default1" ng-click="tab = 4" ng-class="{'active':tab == 4}">{{OurProgrammes[2].name}}</button>
-                <button type="button" class="btn btn-default1" ng-click="tab = 3" ng-class="{'active':tab == 3}">{{OurProgrammes[3].name}}</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 1" ng-class="{'active':tab == 1}">{{OurProgrammes[1].name}}</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 2" ng-class="{'active':tab == 2}">{{OurProgrammes[3].name}}</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 3" ng-class="{'active':tab == 3}">{{OurProgrammes[2].name}}</button>
+                <button type="button" class="btn btn-default1" ng-click="tab = 4" ng-class="{'active':tab == 4}">{{OurProgrammes[0].name}}</button>
             </div>
             <!-- </div> -->
             <!-- <div class="col-md-9 mgl-135"> -->
@@ -38,14 +38,14 @@
             <div class="option-desc">
                 <div class="mother-toddler sec-style" ng-if="tab == 1">
                     <p class="font-hind-regular text-justify">
-                        <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[0].name}}</h2>
-                        <p ng-bind-html="OurProgrammes[0].content"></p>
+                        <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[1].name}}</h2>
+                        <p ng-bind-html="OurProgrammes[1].content"></p>
                 </div>
 
                 <div class="pre-nursery sec-style" ng-if="tab == 2">
 
-                    <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[1].name}}</h2>
-                    <div ng-bind-html="OurProgrammes[1].name"></div>
+                    <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[3].name}}</h2>
+                    <div ng-bind-html="OurProgrammes[3].content"></div>
                 </div>
                 <div class="daycare sec-style" ng-if="tab == 3">
                     <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[2].name}}</h2>
@@ -54,8 +54,8 @@
                 </div>
                 <div class="nursery sec-style" ng-if="tab == 4">
 
-                    <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[3].name}}</h2>
-                    <div ng-bind-html="OurProgrammes[3].content"></div>
+                    <h2 class="text-uppercase font-dkcat text-center">{{OurProgrammes[0].name}}</h2>
+                    <div ng-bind-html="OurProgrammes[0].content"></div>
                 </div>
                 </p>
             </div>
