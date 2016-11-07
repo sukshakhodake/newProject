@@ -7,6 +7,21 @@
         right: 68px;
         z-index: 99;
     }
+// .prog-bir3 img {
+//     width: 500px;
+// }
+.prog-bir1 img {
+    width: 670px;
+}
+.prog-bir3 img {
+    width: 320px;
+}
+// .prog-bir2 img {
+//     width: 860px;
+// }
+.prog-bir2 img {
+    width: 690px;
+}
 }
 
 @media (max-width: 1200px) {
@@ -27,6 +42,15 @@
     .prog-bir1 img{
       width: 450px;
     }
+    .prog-bir2 img {
+    width: 550px;
+}
+.prog-bir3 img {
+    width: 242px;
+}
+.ourprogrammes-page3{
+  position: relative;
+}
     .butterflie {
         top: -12%;
         left: -11%;
@@ -374,6 +398,9 @@ bottom: -88px;
     .ourstory-page1 {
         min-height: 100vh;
     }
+    .prog-bir2 img {
+        width: 440px;
+    }
 }
 
 @media (max-width: $screen-xs-max) {
@@ -489,8 +516,11 @@ bottom: -88px;
 .prog-bir1-2 img {
     width: 33px;
 }
+// .prog-bir2 img {
+//     width: 440px;
+// }
 .prog-bir2 img {
-    width: 440px;
+    width: 300px;
 }
 .prog-bir2-2 img {
     width: 40px;
