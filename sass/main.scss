@@ -557,6 +557,7 @@ li {
         margin-bottom: 0;
     }
     .fa {
+          font-size: 3em;
         color: #eac62c;
         margin-right: 10px;
     }
@@ -1681,6 +1682,7 @@ li {
 
 .media-image {
     margin: 5px;
+    position: relative;
 }
 
 .flex-direction-nav .flex-next,
@@ -2023,6 +2025,13 @@ footer {
       display: inline-block;
       width: 220px;
 }
+.play{
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+}
+
 // .form-in { @include transform(translateX(0px)); }
 //bootstrap forms
 

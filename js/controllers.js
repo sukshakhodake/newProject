@@ -178,35 +178,35 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
     })
     .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-        //Used to name the .html file
-        $scope.template = TemplateService.changecontent("gallery");
-        $scope.menutitle = NavigationService.makeactive("Gallery");
-        TemplateService.title = $scope.menutitle;
-        $scope.navigation = NavigationService.getnav();
-        if (typeof $.fn.fullpage.destroy == 'function') {
-            $.fn.fullpage.destroy('all');
-        }
+      //Used to name the .html file
+      $scope.template = TemplateService.changecontent("gallery");
+      $scope.menutitle = NavigationService.makeactive("Gallery");
+      TemplateService.title = $scope.menutitle;
+      $scope.navigation = NavigationService.getnav();
+      if (typeof $.fn.fullpage.destroy == 'function') {
+          $.fn.fullpage.destroy('all');
+      }
 
 
-        NavigationService.getGallery(function(data){
-          $scope.galleryImage=data.data;
-          $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+      NavigationService.getGallery(function(data){
+        $scope.galleryImage=data.data;
+        $scope.galleryImage = _.chunk($scope.galleryImage, 6);
 
-          for (var i = 0; i < $scope.galleryImage.length; i++) {
-              $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
-          };
-          console.log("galleryImage",  $scope.galleryImage);
-          $scope.galleryXs=data.data;
-          $scope.galleryXs = _.chunk($scope.galleryXs, 2);
-          for (var i = 0; i < $scope.galleryXs.length; i++) {
-              $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
-          };
-        })
-
-
+        for (var i = 0; i < $scope.galleryImage.length; i++) {
+            $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+        };
+        console.log("galleryImage",  $scope.galleryImage);
+        $scope.galleryXs=data.data;
+        $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+        for (var i = 0; i < $scope.galleryXs.length; i++) {
+            $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+        };
+      })
 
 
-    })
+
+
+  })
     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("contactus");

@@ -140,7 +140,24 @@ firstapp.filter('serverimage', function() {
     }
   }
 });
-
+firstapp.filter('youtubethumb', function() {
+    return function(input, onlyid) {
+        if (input) {
+            var videoid = input.match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/);
+            if (videoid != null) {
+                if (onlyid == false) {
+                    return "http://img.youtube.com/vi/" + videoid[1] + "/hqdefault.jpg";
+                } else if (onlyid == true) {
+                    return videoid[1];
+                }
+            } else {
+                return input;
+            }
+        } else {
+            return input;
+        }
+    };
+});
 firstapp.directive('onlyDigits', function() {
     return {
         require: 'ngModel',

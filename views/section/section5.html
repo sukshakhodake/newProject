@@ -17,12 +17,20 @@
                         <li>
                             <div class="row img-border" ng-repeat="row in slide track by $index">
                                 <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
-                                    <a fancybox-box href="{{wall.image | serverimage}}" rel="cop">
-                                        <div class="media-image">
-                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
-                                            <!--<i class="fa {{wall.icon}}"></i>-->
-                                        </div>
-                                    </a>
+                                  <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1" rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
+
+                                      <div class="media-image">
+
+                                          <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                          <div class="play" ng-if="wall.youtubeLink">
+                                              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                          </div>
+
+                                          <!-- <img src="img/button.png"  class="img-responsive" alt=""> -->
+                                          <!--<i class="fa {{wall.icon}}"></i>-->
+                                      </div>
+
+                                  </a>
                                 </div>
                             </div>
                         </li>
@@ -32,12 +40,20 @@
                         <li>
                             <div class="row img-border" ng-repeat="row in slide track by $index">
                                 <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
-                                    <a fancybox-box href="{{wall.image | serverimage}}" rel="cop">
-                                        <div class="media-image">
-                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
-                                            <!--<i class="fa {{wall.icon}}"></i>-->
-                                        </div>
-                                    </a>
+                                  <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1" rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
+
+                                      <div class="media-image">
+
+                                          <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                          <div class="play" ng-if="wall.youtubeLink">
+                                              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                          </div>
+
+                                          <!-- <img src="img/button.png"  class="img-responsive" alt=""> -->
+                                          <!--<i class="fa {{wall.icon}}"></i>-->
+                                      </div>
+
+                                  </a>
                                 </div>
                             </div>
                         </li>
