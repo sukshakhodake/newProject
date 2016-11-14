@@ -7,6 +7,21 @@
         right: 68px;
         z-index: 99;
     }
+// .prog-bir3 img {
+//     width: 500px;
+// }
+.prog-bir1 img {
+    width: 670px;
+}
+.prog-bir3 img {
+    width: 320px;
+}
+// .prog-bir2 img {
+//     width: 860px;
+// }
+.prog-bir2 img {
+    width: 690px;
+}
 }
 
 @media (max-width: 1200px) {
@@ -18,6 +33,24 @@
     //         width: 68%;
     //     }
     // }
+    .pdt180 {
+        padding-top: 90px;
+    }
+    .ourprogrammes-page1{
+      position: relative;
+    }
+    .prog-bir1 img{
+      width: 450px;
+    }
+    .prog-bir2 img {
+    width: 550px;
+}
+.prog-bir3 img {
+    width: 242px;
+}
+.ourprogrammes-page3{
+  position: relative;
+}
     .butterflie {
         top: -12%;
         left: -11%;
@@ -57,6 +90,7 @@
     .book-bird img {
         width: 150px;
     }
+
     .ourstory-page2 .ourstory-bir2 img {
         width: 190px;
     }
@@ -134,7 +168,7 @@
         min-height: 440px;
     }
 }
-
+//------ <992 -------------
 @media (max-width: $screen-sm-max) {
     //gallery
     .butterflie {
@@ -144,6 +178,16 @@
             width: 68%;
         }
     }
+
+    .contact-sec1{
+      width: 62%;
+bottom: -88px;
+    }
+    .book-bird {
+    right: -34px;
+    bottom: 0;
+}
+
     .bird1-team img {
         width: 400px;
     }
@@ -170,17 +214,40 @@
         width: 400px;
     }
     .ourstory-page2 .ourstory-bir2 {
+      bottom: 0;
         right: -64px;
     }
     .ourstory-page3 .ourmission-bir3 {
         right: -55px;
     }
+    .ourstory-bir4 img {
+    position: absolute;
+    right: 30px;
+}
+.prog-bir2 img {
+    width: 600px;
+}
+.ourprogrammes-page2 {
+  position: relative;
+}
+.ourprogrammes-page4{
+  position: relative;
+}
+.prog-bir4 img {
+    width: 275px;
+}
+.ourprogrammes-page3{
+  position: relative;
+}
+.prog-bir3 img {
+    width: 212px;
+}
     .lake {
         bottom: 0;
     }
     .book-bird {
         right: -34px;
-        bottom: -175px;
+        bottom: 0px;
     }
     // .about-inside {
     //     min-height: 710px;
@@ -193,7 +260,7 @@
         width: 120px;
     }
     .lake img {
-        height: 95px;
+        height: 80px;
     }
     .social {
         margin-right: -25px;
@@ -209,15 +276,48 @@
     .menu li {
         margin: 20px 4px 0;
     }
+    .programmes-sec{
+      margin-top: 60px;
+    }
+    .parts .mt_holder {
+    position: relative;
+    width: 98px;
+}
+.parts .img1-sec3 {
+    height: 88px;
+}
+.parts .parts-sec3 {
+  width: 88px;
+}
+.parts .parts-sec4 {
+    left: 12px;
+  }
+.parts .img2-sec3 {
+    height: 88px;
+}
+.parts .img2-sec4 {
+    height: 54px;
+}
+.pdt110 {
+    padding-top: 50px;
+}
+.main-slide {
+    position: absolute;
+    right: -50px;
+    bottom: 10px;
+    z-index: 99;
+}
+
+
     .story1 {
-        font-size: 20px;
+        font-size: 23px;
         line-height: 125%;
         position: absolute;
         left: 11%;
     }
     .story2 {
         padding: 45px 20px;
-        top: 20%;
+        top: 30%;
         p {
             line-height: 125%;
             font-size: 15px;
@@ -259,15 +359,47 @@
         top: 70px;
         @include transform(translateX(-50%));
     }
+    .contact-sec {
+        background-color: #f4efcf;
+        border-radius: 116px;
+        width: 53%;
+        position: relative;
+        left: 54%;
+        top: 0;
+      }
+      .bird-tel{
+        position: absolute;
+        left: -260px;
+      }
+        .bird-tel img {
+    width: 230px;
+    margin: 0 auto;
+}
+.parts .parts-sec {
+      width: 90px;
+  }
+  .programmes-sec {
+      margin-top: 26px;
+  }
+  .programmes-sec {
+  padding: 22px 35px 20px;
+  }
+  .mobile-fix{
+    margin-top: 33px;
+  }
     .environment .enviornment-sec {
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
+        z-index: 999;
     }
     .brdcontact img {
         width: 250px;
     }
     .ourstory-page1 {
         min-height: 100vh;
+    }
+    .prog-bir2 img {
+        width: 440px;
     }
 }
 
@@ -279,6 +411,37 @@
             width: 20%;
         }
     }
+//     .mobile-fix {
+//     margin-top: 90px;
+// }
+.programmes-sec {
+    margin-top: 90px;
+}
+.parts .mt_holder {
+    position: relative;
+    width: 133px;
+}
+    .lake img {
+      height: 52px;
+    }
+    .ourstory-bir4 img{
+      width: 80px;
+    }
+    .ourstory-page3 .ourmission-bir3 {
+    bottom: -115px;
+    right: 0;
+}
+.contact-sec1 {
+    width: 100%;
+  }
+.ourstory-page3 .ourmission-bir3 img {
+    width: 230px;
+}
+    .option-sec .btn-default1 {
+        display: block;
+        width: 110px;
+      }
+
     .flex-direction-nav a {
         margin: -20px 22px 0;
     }
@@ -307,9 +470,88 @@
         width: 100px;
     }
     .ourstory-page2 .ourstory-bir2 {
-        bottom: -95px;
+        bottom: -55px;
         right: 0;
     }
+    .option-sec .btn-default1 {
+    font-size: 16px;
+  }
+  .prog-bir1 img {
+    width: 220px;
+}
+.prog-bir4 img {
+    width: 224px;
+}
+.prog-bir3 img {
+    width: 190px;
+}
+.gallery-page .bfly img {
+    width: 46px;
+}
+.gallery-page .bfly {
+    margin-left: 0;
+}
+.gallery-page .sub-head {
+    font-size: 23px;
+  }
+  .pos-set2 img {
+    width: 246px;
+}
+.gallery-page p {
+  font-size: 16px;
+}
+.ourstory-bir1-2 img {
+    width: 30px;
+}
+.ourstory-bir1-2 {
+    position: absolute;
+    top: 17%;
+    left: 7%;
+}
+.prog-bir1-2 {
+    position: absolute;
+    top: 26%;
+    left: 1%;
+}
+.prog-bir1-2 img {
+    width: 33px;
+}
+// .prog-bir2 img {
+//     width: 440px;
+// }
+.prog-bir2 img {
+    width: 300px;
+}
+.prog-bir2-2 img {
+    width: 40px;
+}
+.contact-background h3 {
+    font-size: 24px;
+  }
+  .contact-background .msg-form {
+    padding-top: 10px;
+}
+// .fdb-form {
+//     padding: 24px 40px;
+// }
+// .fdb-form{
+//   .sub-btn{
+//     margin-top: -39px;
+//   }
+// }
+// .fdb-form .know-more {
+//   margin-bottom: -50px;
+// }
+.sec-style p{
+  text-align: justify;
+}
+.sec-style h2{
+  margin-bottom: 0;
+}
+.option-desc {
+    padding: 40px 105px;
+  }
+
     .option-desc,
     .option-desc2 {
         width: 100%;
@@ -320,7 +562,7 @@
     }
     .option-sec {
         position: absolute;
-        top: -48px;
+        top: -60px;
         text-align: center;
         width: 100%;
         .btn-default1 {
@@ -333,12 +575,14 @@
     }
     .ourstory-page3 .ourmission-bir3 {
         bottom: -115px;
-        right: -37px;
-    }
+        }
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
         background-color: transparent;
     }
+    .ourstory-page2 .ourstory-bir2 img {
+    width: 150px;
+}
     .contact-sec1 {
         border-radius: 80px;
         position: static;
@@ -480,6 +724,19 @@
         width: 25%;
         margin: 0 auto;
     }
+    .story2 {
+    top: 57%;
+  }
+  .birdset2 img {
+    width: auto;
+    height: 41vh;
+}
+  .birdset2 .story1 {
+    font-size: 18px;
+    line-height: 125%;
+    left: 8%;
+    top: 45%;
+}
     footer {
         height: auto;
         p {
@@ -499,13 +756,60 @@
     .prgm-dcrpt .h100 {
         height: 40vh;
     }
+    .programmes-sec {
+      margin-top: 74px;
+  }
+  .programmes-sec p {
+      font-size: 14px;
+      line-height: 20px;
+  }
+  .programmes-sec h3 {
+    font-size: 30px;
 }
-
+.mobile-fix {
+    margin-top: 110px;
+}
+.parts .mt_holder {
+    position: relative;
+    width: 137px;
+}
+.environment .enviornment-sec {
+    width: 76%;
+}
+.bird-tel {
+    position: absolute;
+    top: -62px;
+    left: 128px;
+}
+.bird-tel img {
+    width: 13%;
+  }
+  .contact-sec {
+    left: 50%;
+}
+.brd-msg {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+}
 @media (max-width: 480px) {
     .butterflie {
         top: 5%;
         left: -3%;
     }
+    .environment .enviornment-sec {
+    width: 88%;
+}
+    .mobile-fix {
+    margin-top: 5px;
+}
+    .fdb-form .know-more{
+          margin-bottom: -55px;
+    }
+    .contact-sec1 {
+    width: 100%;
+  }
     .flex-direction-nav .flex-next {
         right: -38px;
         opacity: 1;
@@ -631,6 +935,10 @@
     .pdt180 {
         padding-top: 0px;
     }
+    .birdset2 .story1 {
+    font-size: 17px;
+  }
+
     .contact-sec {
         border-radius: 70px;
         width: 310px;
@@ -658,6 +966,7 @@
             overflow: hidden;
         }
     }
+
     .story2,
     .environment .enviornment-sec {
         height: 220px;
