@@ -114,6 +114,13 @@ var navigationservice = angular.module('navigationservice', [])
               withCredentials: true
             }).success(callback);
           },
+        getGallery:function(callback) {
+            $http({
+              url: adminurl + 'Gallery/getAllImages',
+              method: 'POST',
+              withCredentials: true
+            }).success(callback);
+          },
 
 
   };

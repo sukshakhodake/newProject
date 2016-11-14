@@ -1,23 +1,49 @@
-<!--</div>
-                <div class="text-center">
-                    <div class="name-btn">
-                        <h4>{{item.name}}</h4>
-                    </div>
-                </div>
-            </div>
-        </li>
-        </flexi-slider>
-    </div>
-  </div>-->
 <div class="gallery gallery-page">
+
+    <div class="blackflie hidden-xs hidden-sm">
+        <img src="img/gallery/black-fly.png" alt="" class="img-responsive display-inline">
+    </div>
     <div class="get-center wd100">
         <div class="coming-soon">
+
             <div class="container">
-                <div class="bfly display-inline">
-                    <img src="img/gallery/butterfly.png" alt="" class="img-responsive display-inline">
-                    <h3 class="text-uppercase font-dkcat text-left sub-head display-inline">Gallery</h3>
+                <div class="col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
+                    <div class="butterflie">
+                        <img src="img/gallery/butter-fly.png" alt="" class="img-responsive display-inline">
+                    </div>
+                    <h3 class="text-uppercase font-dkcat text-left display-inline">Art Attack</h3>
+                    <flex-slider flex-slide="slide in galleryImage track by $index" animation="slide" animation-loop="false" slideshow="false"
+                        prev-text="" next-text="" class="hidden-xs">
+                        <li>
+                            <div class="row img-border" ng-repeat="row in slide track by $index">
+                                <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
+                                    <a fancybox-box href="{{wall.image | serverimage}}" rel="cop">
+                                        <div class="media-image">
+                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                            <!--<i class="fa {{wall.icon}}"></i>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </flex-slider>
+                    <flex-slider flex-slide="slide in galleryXs track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                        next-text="" class="visible-xs">
+                        <li>
+                            <div class="row img-border" ng-repeat="row in slide track by $index">
+                                <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
+                                    <a fancybox-box href="{{wall.image | serverimage}}" rel="cop">
+                                        <div class="media-image">
+                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                            <!--<i class="fa {{wall.icon}}"></i>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </flex-slider>
                 </div>
-                <div class="pos-set2">
+                <!--<div class="pos-set2">
                     <img src="img/gallery/coming-soon.png" alt="" class="img-responsive">
                 </div>
                 <div class="coming-sec">
@@ -27,8 +53,12 @@
                     <p class="text-center font-hind-regular">
                         Come back soon!
                     </p>
-                </div>
+                </div>-->
+
             </div>
         </div>
+    </div>
+    <div class="gallery-bird hidden-xs">
+        <img src="img/gallery/bird-painting.png" alt="" class="img-responsive">
     </div>
 </div>
