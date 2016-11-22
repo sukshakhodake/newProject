@@ -1,11 +1,9 @@
 <div class="gallery gallery-page">
-
     <div class="blackflie hidden-xs hidden-sm">
         <img src="img/gallery/black-fly.png" alt="" class="img-responsive display-inline">
     </div>
     <div class="get-center wd100">
         <div class="coming-soon">
-
             <div class="container">
                 <div class="col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
                     <div class="butterflie">
@@ -17,6 +15,27 @@
                         <li>
                             <div class="row img-border" ng-repeat="row in slide track by $index">
                                 <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
+                                    <a ng-if="wall.youtubeLink" fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1"
+                                        rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
+                                        <div class="media-image">
+                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                            <div class="play" ng-if="wall.youtubeLink">
+                                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a ng-if="!wall.youtubeLink" fancybox-box href="{{wall.image2 | serverimage}}" rel="cop">
+                                        <div class="media-image">
+                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                            <!-- <div class="play" ng-if="wall.youtubeLink">
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                 </div> -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<div class="row img-border" ng-repeat="row in slide track by $index">
+                                <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
                                   <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1" rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
 
                                       <div class="media-image">
@@ -27,39 +46,54 @@
                                           </div>
 
                                           <!-- <img src="img/button.png"  class="img-responsive" alt=""> -->
-                                          <!--<i class="fa {{wall.icon}}"></i>-->
-                                      </div>
-
-                                  </a>
-                                </div>
-                            </div>
-                        </li>
-                    </flex-slider>
-                    <flex-slider flex-slide="slide in galleryXs track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
-                        next-text="" class="visible-xs">
-                        <li>
-                            <div class="row img-border" ng-repeat="row in slide track by $index">
-                                <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
-                                  <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1" rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
-
-                                      <div class="media-image">
-
-                                          <img ng-src="{{wall.image | serverimage}}" alt="" class="">
-                                          <div class="play" ng-if="wall.youtubeLink">
-                                              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-                                          </div>
-
-                                          <!-- <img src="img/button.png"  class="img-responsive" alt=""> -->
-                                          <!--<i class="fa {{wall.icon}}"></i>-->
-                                      </div>
-
-                                  </a>
-                                </div>
-                            </div>
-                        </li>
-                    </flex-slider>
+                            <!--<i class="fa {{wall.icon}}"></i>-->
                 </div>
-                <!--<div class="pos-set2">
+                </a>
+            </div>
+        </div>-->
+        </li>
+        </flex-slider>
+        <flex-slider flex-slide="slide in galleryXs track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+            next-text="" class="visible-xs">
+            <li>
+                <div class="row img-border" ng-repeat="row in slide track by $index">
+                    <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
+                        <a ng-if="wall.youtubeLink" fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1"
+                            data-fancybox-type="iframe" rel="fancybox-button1">
+                            <div class="media-image">
+                                <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                <div class="play" ng-if="wall.youtubeLink">
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                </div>
+                                <!--<i class="fa {{wall.icon}}"></i>-->
+                            </div>
+                        </a>
+                        <a ng-if="!wall.youtubeLink" fancybox-box href="{{wall.image2 | serverimage}}" rel="cop">
+                            <div class="media-image">
+                                <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--<div class="row img-border" ng-repeat="row in slide track by $index">
+                    <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
+                        <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1"
+                            rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
+                            <div class="media-image">
+                                <img ng-src="{{wall.image | serverimage}}" alt="" class="">
+                                <div class="play" ng-if="wall.youtubeLink">
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- <img src="img/button.png"  class="img-responsive" alt=""> -->
+                <!--<i class="fa {{wall.icon}}"></i>-->
+    </div>
+    </a>
+</div>
+</div>-->
+</li>
+</flex-slider>
+</div>
+<!--<div class="pos-set2">
                     <img src="img/gallery/coming-soon.png" alt="" class="img-responsive">
                 </div>
                 <div class="coming-sec">
@@ -70,11 +104,10 @@
                         Come back soon!
                     </p>
                 </div>-->
-
-            </div>
-        </div>
-    </div>
-    <div class="gallery-bird hidden-xs">
-        <img src="img/gallery/bird-painting.png" alt="" class="img-responsive">
-    </div>
+</div>
+</div>
+</div>
+<div class="gallery-bird hidden-xs">
+    <img src="img/gallery/bird-painting.png" alt="" class="img-responsive">
+</div>
 </div>
