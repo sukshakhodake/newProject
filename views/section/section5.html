@@ -6,11 +6,26 @@
         <div class="coming-soon">
             <div class="container">
                 <div class="col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
-                    <div class="butterflie">
+                    <!--<div class="butterflie">
                         <img src="img/gallery/butter-fly.png" alt="" class="img-responsive display-inline">
+                    </div>-->
+                    <h3 class="text-uppercase font-dkcat text-left display-inline">Gallery</h3>
+                    <div class="circle-gallery">
+                        <flex-slider flex-slide="s in gallery track by $index" prev-text="" next-text="" animation="slide" item-width="272" item-margin="5">
+                            <li>
+                                <div class="image-circle">
+                                    <img ui-sref="gallery" src="{{s.image}}" class="img-responsive image">
+                                    <div class="plusimg">
+                                        <img ui-sref="gallery" src="img/gallery/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text-center gallery-name">
+                                    <p>{{s.name}}</p>
+                                </div>
+                            </li>
+                        </flex-slider>
                     </div>
-                    <h3 class="text-uppercase font-dkcat text-left display-inline">Art Attack</h3>
-                    <flex-slider flex-slide="slide in galleryImage track by $index" animation="slide" animation-loop="false" slideshow="false"
+                    <!--<flex-slider flex-slide="slide in galleryImage track by $index" animation="slide" animation-loop="false" slideshow="false"
                         prev-text="" next-text="" class="hidden-xs">
                         <li>
                             <div class="row img-border" ng-repeat="row in slide track by $index">
@@ -26,15 +41,15 @@
                                     </a>
                                     <a ng-if="!wall.youtubeLink" fancybox-box href="{{wall.image2 | serverimage}}" rel="cop">
                                         <div class="media-image">
-                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">
-                                            <!-- <div class="play" ng-if="wall.youtubeLink">
+                                            <img ng-src="{{wall.image | serverimage}}" alt="" class="">-->
+                    <!-- <div class="play" ng-if="wall.youtubeLink">
                                     <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                                  </div> -->
-                                        </div>
+                    <!--</div>
                                     </a>
                                 </div>
-                            </div>
-                            <!--<div class="row img-border" ng-repeat="row in slide track by $index">
+                            </div>-->
+                    <!--<div class="row img-border" ng-repeat="row in slide track by $index">
                                 <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
                                   <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1" rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
 
@@ -51,9 +66,10 @@
                 </a>
             </div>
         </div>-->
-                        </li>
-                    </flex-slider>
-                    <flex-slider flex-slide="slide in galleryXs track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                    <!--</li>
+                    </flex-slider>-->
+                    <!--maincode-->
+                    <!--<flex-slider flex-slide="slide in galleryXs track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
                         next-text="" class="visible-xs">
                         <li>
                             <div class="row img-border" ng-repeat="row in slide track by $index">
@@ -64,9 +80,9 @@
                                             <img ng-src="{{wall.image | serverimage}}" alt="" class="">
                                             <div class="play" ng-if="wall.youtubeLink">
                                                 <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-                                            </div>
-                                            <!--<i class="fa {{wall.icon}}"></i>-->
-                                        </div>
+                                            </div>-->
+                    <!--<i class="fa {{wall.icon}}"></i>-->
+                    <!--</div>
                                     </a>
                                     <a ng-if="!wall.youtubeLink" fancybox-box href="{{wall.image2 | serverimage}}" rel="cop">
                                         <div class="media-image">
@@ -74,8 +90,9 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <!--<div class="row img-border" ng-repeat="row in slide track by $index">
+                            </div>-->
+                    <!--maincode-->
+                    <!--<div class="row img-border" ng-repeat="row in slide track by $index">
                     <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
                         <a fancybox-box href="https://www.youtube.com/embed/{{wall.youtubeLink | youtubethumb:true}}?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1"
                             rel="cop" data-fancybox-type="iframe" rel="fancybox-button1">
@@ -90,7 +107,7 @@
                 </a>
             </div>
             </div>-->
-                        </li>
+                    </li>
                     </flex-slider>
                 </div>
                 <!--<div class="pos-set2">
@@ -107,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="gallery-bird hidden-xs">
+    <!--<div class="gallery-bird hidden-xs">
         <img src="img/gallery/bird-painting.png" alt="" class="img-responsive">
-    </div>
+    </div>-->
 </div>

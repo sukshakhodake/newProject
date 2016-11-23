@@ -12,39 +12,64 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
 
 
-    NavigationService.getGallery(function(data){
-      $scope.galleryImage=data.data;
-      $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+    NavigationService.getGallery(function (data) {
+        $scope.galleryImage = data.data;
+        $scope.galleryImage = _.chunk($scope.galleryImage, 6);
 
-      for (var i = 0; i < $scope.galleryImage.length; i++) {
-          $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
-      };
-      $scope.galleryXs=data.data;
-      $scope.galleryXs = _.chunk($scope.galleryXs, 2);
-      for (var i = 0; i < $scope.galleryXs.length; i++) {
-          $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
-      };
+        for (var i = 0; i < $scope.galleryImage.length; i++) {
+            $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+        };
+        $scope.galleryXs = data.data;
+        $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+        for (var i = 0; i < $scope.galleryXs.length; i++) {
+            $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+        };
     })
 
 
 
+    // $scope.gallery = [{
+    //     image: "img/sec5/lunchfun.png",
+    //     name: "Lunch Funday"
+    // }, {
+    //     image: "img/sec5/artattack.png",
+    //     name: "Art Attack"
+    // }, {
+    //     image: "img/sec5/playday.png",
+    //     name: "Play Day"
+    // }, {
+    //     image: "img/sec5/lego.png",
+    //     name: "Lego Lessons"
+    // }, {
+    //     image: "img/sec5/lego.png",
+    //     name: "Lego Lessons"
+    // }, {
+    //     image: "img/sec5/lego.png",
+    //     name: "Lego Lessons"
+    // }];
     $scope.gallery = [{
-        image: "img/sec5/lunchfun.png",
-        name: "Lunch Funday"
+        image: "img/gallery/demo1.png",
+        name: "Lunch Fun Day"
     }, {
-        image: "img/sec5/artattack.png",
+        image: "img/gallery/demo1.png",
         name: "Art Attack"
     }, {
-        image: "img/sec5/playday.png",
+        image: "img/gallery/demo1.png",
         name: "Play Day"
     }, {
-        image: "img/sec5/lego.png",
+        image: "img/gallery/demo1.png",
         name: "Lego Lessons"
     }, {
-        image: "img/sec5/lego.png",
-        name: "Lego Lessons"
+        image: "img/gallery/demo1.png",
+        name: "Lunch Fun Day"
     }, {
-        image: "img/sec5/lego.png",
+        image: "img/gallery/demo1.png",
+        name: "Art Attack"
+    }, {
+        image: "img/gallery/demo1.png",
+        name: "Play Day"
+    }, {
+        image: "img/gallery/demo1.png",
         name: "Lego Lessons"
     }];
     $scope.section = {
@@ -178,35 +203,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
     })
     .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-      //Used to name the .html file
-      $scope.template = TemplateService.changecontent("gallery");
-      $scope.menutitle = NavigationService.makeactive("Gallery");
-      TemplateService.title = $scope.menutitle;
-      $scope.navigation = NavigationService.getnav();
-      if (typeof $.fn.fullpage.destroy == 'function') {
-          $.fn.fullpage.destroy('all');
-      }
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("gallery");
+        $scope.menutitle = NavigationService.makeactive("Gallery");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
 
 
-      NavigationService.getGallery(function(data){
-        $scope.galleryImage=data.data;
-        $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+        NavigationService.getGallery(function (data) {
+            $scope.galleryImage = data.data;
+            $scope.galleryImage = _.chunk($scope.galleryImage, 6);
 
-        for (var i = 0; i < $scope.galleryImage.length; i++) {
-            $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
-        };
-        console.log("galleryImage",  $scope.galleryImage);
-        $scope.galleryXs=data.data;
-        $scope.galleryXs = _.chunk($scope.galleryXs, 2);
-        for (var i = 0; i < $scope.galleryXs.length; i++) {
-            $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
-        };
-      })
-
-
+            for (var i = 0; i < $scope.galleryImage.length; i++) {
+                $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+            };
+            console.log("galleryImage", $scope.galleryImage);
+            $scope.galleryXs = data.data;
+            $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+            for (var i = 0; i < $scope.galleryXs.length; i++) {
+                $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+            };
+        })
 
 
-  })
+
+    })
     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("contactus");
@@ -285,7 +309,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                     });
                     $scope.formData = {};
                 } else {
-                  console.log("Error while submiting form  mail");
+                    console.log("Error while submiting form  mail");
                 }
             });
 
@@ -337,7 +361,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.formClass = "form-in";
                 $scope.formData = {};
             } else {
-              console.log("Error while submiting form  mail");
+                console.log("Error while submiting form  mail");
             }
         });
     };

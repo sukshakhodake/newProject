@@ -557,7 +557,7 @@ li {
         margin-bottom: 0;
     }
     .fa {
-          font-size: 3em;
+        font-size: 3em;
         color: #eac62c;
         margin-right: 10px;
     }
@@ -806,15 +806,14 @@ li {
 }
 
 .option-desc2 {
-  background-color: #f4efcf;
-  border-radius: 100px;
-  padding: 80px 100px;
-  height: auto;
-  position: relative;
-  z-index: 99;
-  width: 75%;
-  margin-left: 144px;
-
+    background-color: #f4efcf;
+    border-radius: 100px;
+    padding: 80px 100px;
+    height: auto;
+    position: relative;
+    z-index: 99;
+    width: 75%;
+    margin-left: 144px;
     // padding-bottom: 150px;
     // margin-bottom: -140px;
     li {
@@ -982,13 +981,14 @@ li {
 }
 
 .ourstory-bir4 {
-    position: relative;;
+    position: relative;
+    ;
     z-index: 2;
     img {
         width: 220px;
-    position: absolute;
-    bottom: 0;
-    right: 15%
+        position: absolute;
+        bottom: 0;
+        right: 15%
     }
 }
 
@@ -1600,8 +1600,8 @@ li {
 
 //gallerycomingsoon
 .gallery-page {
-    background-image: url('../img/gallery/art-attack.png');
-    // background-image: url('../img/gallery/gallerybackground.png');
+    // background-image: url('../img/gallery/art-attack.png');
+    background-image: url('../img/gallery/gallery.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1653,6 +1653,11 @@ li {
             padding: 0;
         }
     }
+}
+
+.gallery-sec {
+    @extend .gallery-page;
+    background-image: url('../img/gallery/art-attack.png');
 }
 
 .flex-direction-nav {
@@ -2002,34 +2007,106 @@ footer {
 }
 
 ///environment edits
-.water{
-  position: relative;
-  bottom: 0;
+.water {
+    position: relative;
+    bottom: 0;
 }
-.birdie-part{
-  position: relative;
-  bottom: -16px;
-  right: 0;
+
+.birdie-part {
+    position: relative;
+    bottom: -16px;
+    right: 0;
 }
-.birdie1{
-  position: absolute;
-  bottom: 0;
-  right: 209px;
-  width: 180px;
-  display: inline-block;
+
+.birdie1 {
+    position: absolute;
+    bottom: 0;
+    right: 209px;
+    width: 180px;
+    display: inline-block;
 }
-.birdie2{
-  position: absolute;
-      bottom: 0;
-      right: 0;
-      display: inline-block;
-      width: 220px;
+
+.birdie2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    width: 220px;
 }
-.play{
-  position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.coming-soon {
+    .circle-gallery {
+        // width: 1030px;
+        margin: 0 auto;
+        .flexslider {
+            background: transparent;
+            .image-circle {
+                position: relative;
+                background: #fff;
+                padding: 8px;
+                width: 200px;
+                height: 200px;
+                border-radius: 44%;
+                margin: 0 auto;
+                .image {
+                    // height: 272px;
+                    border-radius: 44%;
+                    cursor: pointer;
+                }
+                .plusimg {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    right: -60px;
+                    @include transform(translate(-50%,
+                    -50%));
+                    img {
+                        width: 75px;
+                    }
+                }
+            }
+            .flex-direction-nav {
+                a {
+                    &:before {
+                        content: ' ';
+                    }
+                    width: 45px;
+                    height: 80px;
+                    margin: -56px -8px 0;
+                }
+                .flex-next {
+                    background: url(../img/gallery/right.png);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                }
+                .flex-prev {
+                    background: url(../img/gallery/left.png);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                    left: -26px;
+                }
+            }
+        }
+        .gallery-name {
+            p {
+                border-radius: 45px;
+                color: #40180c;
+                padding: 10px;
+                width: 150px;
+                font-size: 16px;
+                background: #3be67d;
+                margin-top: 20px;
+            }
+        }
+    }
 }
 
 // .form-in { @include transform(translateX(0px)); }
