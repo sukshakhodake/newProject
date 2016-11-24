@@ -479,7 +479,7 @@ textarea {
     h3 {
         color: #fffdf9;
         font-size: 50px;
-        margin: 0 60px 5px;
+        margin: 0 82px 5px;
     }
 }
 
@@ -1711,8 +1711,8 @@ li {
 
 .butterflie {
     position: absolute;
-    top: -20%;
-    left: -11%;
+    top: -55%;
+    left: -5%;
     z-index: 99;
 }
 
@@ -2096,14 +2096,16 @@ footer {
             }
         }
         .gallery-name {
-            p {
-                border-radius: 45px;
+            border-radius: 45px;
+            padding: 10px;
+            width: 150px;
+            background: #3be67d;
+            margin: 20px auto;
+            cursor: pointer;
+            a {
+                text-decoration: none;
                 color: #40180c;
-                padding: 10px;
-                width: 150px;
                 font-size: 16px;
-                background: #3be67d;
-                margin-top: 20px;
             }
         }
     }

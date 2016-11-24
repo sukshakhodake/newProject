@@ -1,15 +1,17 @@
 <div class="gallery gallery-page">
-    <div class="blackflie hidden-xs hidden-sm">
+    <!--<div class="blackflie hidden-xs hidden-sm">
         <img src="img/gallery/black-fly.png" alt="" class="img-responsive display-inline">
-    </div>
+    </div>-->
     <div class="get-center wd100">
         <div class="coming-soon">
             <div class="container">
                 <div class="col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
-                    <!--<div class="butterflie">
+                    <div class="butterflie">
                         <img src="img/gallery/butter-fly.png" alt="" class="img-responsive display-inline">
-                    </div>-->
-                    <h3 class="text-uppercase font-dkcat text-left display-inline">Gallery</h3>
+                    </div>
+                    <div class="gallery-head">
+                        <h3 class="text-uppercase font-dkcat text-left display-inline">Gallery</h3>
+                    </div>
                     <div class="circle-gallery">
                         <flex-slider flex-slide="s in gallery track by $index" prev-text="" next-text="" animation="slide" item-width="272" item-margin="5">
                             <li>
@@ -20,7 +22,8 @@
                                     </div>
                                 </div>
                                 <div class="text-center gallery-name">
-                                    <p>{{s.name}}</p>
+                                    <!--<p>{{s.name}}</p>-->
+                                    <a ui-sref="gallery">{{s.name}}</a>
                                 </div>
                             </li>
                         </flex-slider>
