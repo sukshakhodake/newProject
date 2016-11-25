@@ -3,6 +3,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $stateParams) {
     //Used to name the .html file
+$scope.changePage = function (text) {
+    console.log(text);
+    var length = $(".fp-section").length;
+    console.log(length);
+    console.log($(".fp-section"));
+    // if (typeof $.fn.fullpage.destroy == 'function') {
+    //   $.fn.fullpage.destroy('all');
+    // }
+    if (length === 0) {
+      $('.fullpage').fullpage();
+    }
+    console.log(text);
+    $scope.homeval = text;
+    switch (text) {
+    
+      case "gallery":
+        $.fn.fullpage.moveTo(5);
+        break;
+      default:
+        $.fn.fullpage.moveTo(1);
+        break;
+    }
+  };
 
     console.log("Testing Consoles");
 
@@ -26,6 +49,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
     })
 
+    NavigationService.getAlbum(function (data) {
+        $scope.galleryAlbum = data.data.results;
+        console.log('$scope.galleryAlbum',$scope.galleryAlbum);
+        // $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+
+        // for (var i = 0; i < $scope.galleryImage.length; i++) {
+        //     $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+        // };
+        // $scope.galleryXs = data.data;
+        // $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+        // for (var i = 0; i < $scope.galleryXs.length; i++) {
+        //     $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+        // };
+    })
 
 
     // $scope.gallery = [{
@@ -202,7 +239,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $.fn.fullpage.destroy('all');
         }
     })
-    .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout,$stateParams) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("gallery");
         $scope.menutitle = NavigationService.makeactive("Gallery");
@@ -213,7 +250,22 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
 
 
-        NavigationService.getGallery(function (data) {
+        // NavigationService.getGallery(function (data) {
+        //     $scope.galleryImage = data.data;
+        //     $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+
+        //     for (var i = 0; i < $scope.galleryImage.length; i++) {
+        //         $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+        //     };
+        //     console.log("galleryImage", $scope.galleryImage);
+        //     $scope.galleryXs = data.data;
+        //     $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+        //     for (var i = 0; i < $scope.galleryXs.length; i++) {
+        //         $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+        //     };
+        // })
+
+            NavigationService.getGalleryAlbum($stateParams.id,function (data) {
             $scope.galleryImage = data.data;
             $scope.galleryImage = _.chunk($scope.galleryImage, 6);
 
@@ -228,7 +280,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             };
         })
 
-
+    //  NavigationService.getGalleryAlbum($stateParams.id,function (data) {
+    //         $scope.galleryImageAlbum = data.data;
+    //     console.log('$scope.galleryImageAlbum',$scope.galleryImageAlbum);
+    //     })
 
     })
     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {

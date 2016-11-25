@@ -40,7 +40,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       controller: 'OurTeachersCtrl'
   })
   .state('gallery', {
-      url: "/gallery",
+      url: "/gallery/:id",
       templateUrl: "views/template.html",
       controller: 'GalleryCtrl'
   })

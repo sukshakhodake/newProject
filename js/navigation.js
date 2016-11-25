@@ -1,5 +1,6 @@
 var adminurl = "http://104.155.129.33:91/";
 // var adminurl = "http://192.168.100.116:1337/";
+// var adminurl = "http://localhost:1337/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -122,7 +123,21 @@ var navigationservice = angular.module('navigationservice', [])
         withCredentials: true
       }).success(callback);
     },
-
+      getGalleryAlbum: function (id,callback) {
+      $http({
+        url: adminurl + 'Gallery/getAlbum',
+        method: 'POST',
+        data:{album:id},
+        withCredentials: true
+      }).success(callback);
+    },
+getAlbum : function (callback) {
+      $http({
+        url: adminurl + 'Album/search',
+        method: 'POST',
+        withCredentials: true
+      }).success(callback);
+    },
 
   };
 });
