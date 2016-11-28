@@ -267,6 +267,8 @@ $scope.changePage = function (text) {
 
             NavigationService.getGalleryAlbum($stateParams.id,function (data) {
             $scope.galleryImage = data.data;
+          //  console.log(data.data[0].album.name)
+            $scope.galleryAlbumName = data.data[0].album.name;
             $scope.galleryImage = _.chunk($scope.galleryImage, 6);
 
             for (var i = 0; i < $scope.galleryImage.length; i++) {
