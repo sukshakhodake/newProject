@@ -46,7 +46,7 @@ var navigationservice = angular.module('navigationservice', [])
   }, {
     name: "Gallery",
     classis: "active",
-    link: "gallery",
+    link: "galleryinner",
     fullno: 6,
     subnav: []
   }, {

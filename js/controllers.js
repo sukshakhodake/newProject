@@ -17,7 +17,7 @@ $scope.changePage = function (text) {
     console.log(text);
     $scope.homeval = text;
     switch (text) {
-    
+
       case "gallery":
         $.fn.fullpage.moveTo(5);
         break;
@@ -250,6 +250,7 @@ $scope.changePage = function (text) {
         }
 
 
+
         // NavigationService.getGallery(function (data) {
         //     $scope.galleryImage = data.data;
         //     $scope.galleryImage = _.chunk($scope.galleryImage, 6);
@@ -288,6 +289,31 @@ $scope.changePage = function (text) {
     //     })
 
     })
+
+    .controller('GalleryInnerCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("galleryinner");
+        $scope.menutitle = NavigationService.makeactive("GalleryInner");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        };
+        NavigationService.getAlbum(function (data) {
+            $scope.galleryAlbum = data.data.results;
+            console.log('$scope.galleryAlbum',$scope.galleryAlbum);
+            // $scope.galleryImage = _.chunk($scope.galleryImage, 6);
+
+            // for (var i = 0; i < $scope.galleryImage.length; i++) {
+            //     $scope.galleryImage[i] = _.chunk($scope.galleryImage[i], 3);
+            // };
+            // $scope.galleryXs = data.data;
+            // $scope.galleryXs = _.chunk($scope.galleryXs, 2);
+            // for (var i = 0; i < $scope.galleryXs.length; i++) {
+            //     $scope.galleryXs[i] = _.chunk($scope.galleryXs[i], 2);
+            // };
+        })
+      })
     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("contactus");
