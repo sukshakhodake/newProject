@@ -398,16 +398,16 @@ $scope.changePage = function (text) {
 
         };
     })
-    .controller('ArtAttackCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-        //Used to name the .html file
-        $scope.template = TemplateService.changecontent("artattack");
-        $scope.menutitle = NavigationService.makeactive("Art Attack");
-        TemplateService.title = $scope.menutitle;
-        $scope.navigation = NavigationService.getnav();
-        if (typeof $.fn.fullpage.destroy == 'function') {
-            $.fn.fullpage.destroy('all');
-        }
-    })
+    // .controller('ArtAttackCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    //     //Used to name the .html file
+    //     $scope.template = TemplateService.changecontent("artattack");
+    //     $scope.menutitle = NavigationService.makeactive("Art Attack");
+    //     TemplateService.title = $scope.menutitle;
+    //     $scope.navigation = NavigationService.getnav();
+    //     if (typeof $.fn.fullpage.destroy == 'function') {
+    //         $.fn.fullpage.destroy('all');
+    //     }
+    // })
 
 .controller('headerctrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
     $scope.template = TemplateService;

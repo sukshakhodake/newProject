@@ -55,6 +55,11 @@
     </div>
 </div> -->
 <div class="ourstory-page1  pdt150" ng-class="{'ourstory-page1':tab == 1,'ourstory-page2':tab ==2,'ourstory-page3':tab ==3,'ourprogrammes-page4':tab ==4}">
+
+  <div class="baloon-bird hidden-xs hidden-md hidden-lg"  ng-if="tab == 4">
+      <img src="img/ourstory/webelieve.png" alt="" class="img-responsive">
+    </div>
+
     <div class="about-inside">
         <div class="container">
 
@@ -62,7 +67,7 @@
                 <img src="img/ourstory/fly1.png" alt="" class="img-responsive">
             </div>
 
-            <div class="ourmission-1">
+            <div class="ourmission-1 hidden-sm">
                 <img src="img/programmes/fly.png" alt="" class="img-responsive">
             </div>
             <!-- <div class="ourstory-bir4" ng-if="tab == 4">
@@ -122,7 +127,7 @@
     <div class="lake" ng-if="tab == 1">
         <img src="img/ourstory/lake.png" alt="" class="img-responsive">
     </div>
-    <div class="ourstory-bir4" ng-if="tab == 4">
+    <div class="ourstory-bir4 hidden-sm" ng-if="tab == 4">
         <img src="img/ourstory/webelieve.png" alt="" class="img-responsive">
     </div>
 </div>
