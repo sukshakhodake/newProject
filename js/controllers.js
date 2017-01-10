@@ -355,7 +355,7 @@ $scope.changePage = function (text) {
                     marker.setAnimation(google.maps.Animation.BOUNCE);
                 }
             }
-            var image = 'img/contact/mapmarker.png';
+            var image = 'img/contact/mapmarker1.png';
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
